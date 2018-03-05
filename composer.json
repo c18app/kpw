@@ -1,11 +1,18 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "c18app/cmsx",
+    "description": "The CMS build on Laravel Framework.",
+    "keywords": ["CMS"],
     "license": "MIT",
     "type": "project",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/c18app/cmsx-package"
+        }
+    ],
     "require": {
         "php": ">=7.0.0",
+        "c18app/cmsx-package": "dev-master",
         "fideloper/proxy": "~3.3",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0"

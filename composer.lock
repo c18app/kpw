@@ -4,8 +4,57 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "848c3d5fe628002d7cc93dba24c3b7de",
+    "content-hash": "1409ff9cce452b6aff3c1fb603b77d8e",
     "packages": [
+        {
+            "name": "c18app/cmsx-package",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/c18app/cmsx-package.git",
+                "reference": "eebd480ed19877c2ef43e493ce98ad10fe071fa3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/c18app/cmsx-package/zipball/eebd480ed19877c2ef43e493ce98ad10fe071fa3",
+                "reference": "eebd480ed19877c2ef43e493ce98ad10fe071fa3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "illuminate/framework": "5.5.x"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "C18app\\Cmsx\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "C18app\\Cmsx\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michal Nosavcov",
+                    "email": "mnosavcov@gmail.com"
+                }
+            ],
+            "description": "CmsX",
+            "support": {
+                "source": "https://github.com/c18app/cmsx-package/tree/master",
+                "issues": "https://github.com/c18app/cmsx-package/issues"
+            },
+            "time": "2018-03-05T21:11:58+00:00"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
@@ -4081,7 +4130,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "c18app/cmsx-package": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
