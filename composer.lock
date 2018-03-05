@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1409ff9cce452b6aff3c1fb603b77d8e",
+    "content-hash": "95a87ab44245f30ee1996786f9a172f1",
     "packages": [
         {
             "name": "c18app/cmsx-package",

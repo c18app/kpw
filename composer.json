@@ -1,7 +1,7 @@
 {
-    "name": "c18app/cmsx",
-    "description": "The CMS build on Laravel Framework.",
-    "keywords": ["CMS"],
+    "name": "c18app/kpw",
+    "description": "Kurz programování webu.",
+    "keywords": ["KPW"],
     "license": "MIT",
     "type": "project",
     "repositories": [
