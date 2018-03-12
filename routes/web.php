@@ -11,6 +11,4 @@
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/terminy', 'WorkshopController@terms')->name('workshop.terms');
