@@ -8,6 +8,7 @@ use App\WorkshopParticipant;
 use App\WorkshopTerm;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
+use App\Mail\WorkshopConfirm;
 
 class WorkshopController extends Controller
 {
@@ -34,12 +35,11 @@ class WorkshopController extends Controller
         WorkshopParticipant::create($validatedData);
 
         try {
-            Mail::send('workshop.confirm', [], function ($message) use ($validatedData) {
-                $message->to($validatedData['email'], $validatedData['name']);
-                $message->bcc('mnosavcov@gmail.com', 'Michal Nosavcov');
-                $message->subject('Přihláška na seminář');
-                $message->from('kpw@kpw.cz', 'KPW (Kurz Programování Webu)');
-            });
+            $seminar = WorkshopTerm::find($validatedData['workshop_term_id']);
+
+            Mail::to($validatedData['email'], $validatedData['name'])
+                ->bcc('mnosavcov@gmail.com', 'Michal Nosavcov')
+                ->send(new WorkshopConfirm($seminar));
         } catch (\Exception $e) {
             return redirect()->route('workshop.terms')->with('notice', 'Děkuji za Vaši registraci. Registrace proběhla úspěšně, ale potvrzovací email se nepodařilo odeslat! Budu Vás co nejdříve kontaktovat.');
         }
