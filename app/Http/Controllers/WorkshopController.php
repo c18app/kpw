@@ -31,13 +31,14 @@ class WorkshopController extends Controller
             'phone.required' => 'pole "Telefonní číslo" je povinné',
         ]);
 
-        Mail::send('workshop.confirm', [], function($message) {
-            $message->to('mnosavcov@gmail.com', 'KPW')->subject
-            ('Přihláška na seminář');
-            $message->from('mnosavcov@gmail.com','KPW');
+        Mail::send('workshop.confirm', [], function($message) use ($validatedData) {
+            $message->to($validatedData['email'], $validatedData['name'])
+                ->bcc('mnosavcov@gmail.com', 'Michal Nosavcov')
+                ->subject('Přihláška na seminář')
+                ->from('kpw@mail.kpw.cz','KPW (Kurz Programování Webu)');
         });
 
-        WorkshopParticipant::create($request->all());
+        WorkshopParticipant::create($validatedData);
 
         return redirect()->route('workshop.terms')->with('notice', 'Děkuji za Vaši registraci, brzy se Vám ozvu s dalšími informacemi');
     }
