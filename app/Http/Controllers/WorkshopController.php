@@ -31,15 +31,19 @@ class WorkshopController extends Controller
             'phone.required' => 'pole "Telefonní číslo" je povinné',
         ]);
 
-        Mail::send('workshop.confirm', [], function($message) use ($validatedData) {
-            $message->to($validatedData['email'], $validatedData['name'])
-                ->bcc('mnosavcov@gmail.com', 'Michal Nosavcov')
-                ->subject('Přihláška na seminář')
-                ->from('kpw@mail.kpw.cz','KPW (Kurz Programování Webu)');
-        });
-
         WorkshopParticipant::create($validatedData);
 
-        return redirect()->route('workshop.terms')->with('notice', 'Děkuji za Vaši registraci, brzy se Vám ozvu s dalšími informacemi');
+        try {
+            Mail::send('xworkshop.confirm', [], function ($message) use ($validatedData) {
+                $message->to($validatedData['email'], $validatedData['name']);
+                $message->bcc('mnosavcov@gmail.com', 'Michal Nosavcov');
+                $message->subject('Přihláška na seminář');
+                $message->from('kpw@kpw.cz', 'KPW (Kurz Programování Webu)');
+            });
+        } catch (\Exception $e) {
+            return redirect()->route('workshop.terms')->with('notice', 'Děkuji za Vaši registraci. Registrace proběhla úspěšně, ale potvrzovací email se nepodařilo odeslat! Budu Vás co nejdříve kontaktovat.');
+        }
+
+        return redirect()->route('workshop.terms')->with('notice', 'Děkuji za Vaši registraci, Na Váš email byla odeslána zpráva s potvrzením. V případě jakýchkoli dotazů se na mě prosím obraťte.');
     }
 }
