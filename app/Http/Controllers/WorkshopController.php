@@ -34,7 +34,7 @@ class WorkshopController extends Controller
         WorkshopParticipant::create($validatedData);
 
         try {
-            Mail::send('xworkshop.confirm', [], function ($message) use ($validatedData) {
+            Mail::send('workshop.confirm', [], function ($message) use ($validatedData) {
                 $message->to($validatedData['email'], $validatedData['name']);
                 $message->bcc('mnosavcov@gmail.com', 'Michal Nosavcov');
                 $message->subject('Přihláška na seminář');

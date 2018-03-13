@@ -10,6 +10,7 @@
     @endif
 
     <h1>Termíny seminářů</h1>
+    <a href="{{ route('homepage') }}">Informace o semináři</a>
 
     <table>
         @forelse ($terms as $term)
