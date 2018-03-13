@@ -9,16 +9,6 @@
         </div>
     @endif
 
-    @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
-
     <h1>Termíny seminářů</h1>
 
     <table>
@@ -42,6 +32,16 @@
     @isset($register)
         <p>
             <br><br><br>
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
         <h2>Registrace na seminář základy programování webu</h2>
         <h3>(základní znalosti pro programování webu)</h3>
         </p>
@@ -53,16 +53,16 @@
             {{ csrf_field() }}
             <input type="hidden" name="workshop_term_id" value="{{ $register->id }}">
             <div class="form-group">
-                <label>Jméno a příjmení</label>
-                <input type="text" name="name" class="form-control">
+                <label>Jméno a příjmení *</label>
+                <input type="text" name="name" class="form-control" value="{{ old('name') }}">
             </div>
             <div class="form-group">
-                <label>Email</label>
-                <input type="text" name="email" class="form-control">
+                <label>Email *</label>
+                <input type="text" name="email" class="form-control" value="{{ old('email') }}">
             </div>
             <div class="form-group">
-                <label>Telefonní číslo</label>
-                <input type="text" name="phone" class="form-control">
+                <label>Telefonní číslo *</label>
+                <input type="text" name="phone" class="form-control" value="{{ old('phone') }}">
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">Registrovat</button>
