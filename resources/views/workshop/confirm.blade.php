@@ -1,0 +1,1 @@
+potvrzení přihlášky na seminář

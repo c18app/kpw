@@ -16,6 +16,7 @@ class CreateWorkshopParticipantsTable extends Migration
         Schema::create('workshop_participants', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
+            $table->integer('workshop_term_id', false, true);
             $table->string('name', 255);
             $table->string('email', 255);
             $table->string('phone', 255);

@@ -4,11 +4,36 @@ namespace App\Http\Controllers;
 
 use App\User;
 use App\Http\Controllers\Controller;
+use App\WorkshopParticipant;
+use App\WorkshopTerm;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Http\Request;
 
 class WorkshopController extends Controller
 {
-    public function terms()
+    public function terms(Request $request, WorkshopTerm $workshop_term = null)
     {
-        return view('workshop.terms');
+        $terms = WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
+        return view('workshop.terms', ['terms' => $terms, 'register' => $workshop_term]);
+    }
+
+    public function register(Request $request)
+    {
+        $validatedData = $request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'phone' => 'required',
+            'workshop_term_id' => 'required|integer',
+        ]);
+
+        Mail::send('workshop.confirm', [], function($message) {
+            $message->to('mnosavcov@gmail.com', 'KPW')->subject
+            ('Přihláška na seminář');
+            $message->from('mnosavcov@gmail.com','KPW');
+        });
+
+        WorkshopParticipant::create($request->all());
+
+        return redirect()->route('workshop.terms')->with('notice', 'Děkuji za Vaši registraci, brzy se Vám ozvu s dalšími informacemi');
     }
 }
