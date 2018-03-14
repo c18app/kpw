@@ -44,7 +44,7 @@
         @endif
 
         <h2>Registrace na seminář základy programování webu</h2>
-        <h3>(základní znalosti pro programování webu)</h3>
+        <h3>(základní znalosti o programování webu)</h3>
         </p>
         <p>
             termín: {{ \Carbon\Carbon::parse($register->beginning)->format('d.m.Y H:i') }}
