@@ -10,7 +10,7 @@
     <p>
         Základy programování webu
         <br>
-        (základní znalosti pro programování webu)
+        (základní znalosti o programování webu)
     </p>
     <ul>
         <li>Láká Vás vyzkoušet si naprogramovat vlastní web úplně od začátku?</li>
@@ -56,7 +56,7 @@
 
     <h2>Co můžu očekávat</h2>
     <ul>
-        <li>Dozvíte se mnoho věcí o tom, jak web funguje.</li>
+        <li>Dozvíte se mnoho informací o tom, jak web funguje.</li>
         <li>Co je to server a jak je možné, že můj počítač ví, kam má jít, když se chci podívat na nějaký web.</li>
         <li>Co je to doména.</li>
         <li>Budu mít znalosti, k tomu abych se začal učit web programovat.</li>
