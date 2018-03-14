@@ -65,6 +65,12 @@
                 <label>Telefonní číslo *</label>
                 <input type="text" name="phone" class="form-control" value="{{ old('phone') }}">
             </div>
+            <div class="checkbox">
+                <label>
+
+                    <input type="checkbox" name="confirm" value="on" {{ old('confirm') ? 'checked="checked"' : '' }}> Souhlasím se zpracováním osobních údajů * <a href="{{ \C18app\Cmsx\Models\Page::firstOrNew(['id' => 18])->getUrl() }}" target="_blank">Ochrana osobních údajů</a>
+                </label>
+            </div>
             <div>* Položky s hvězdičkou je nutné v přihlášce vyplnit.</div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">Registrovat</button>

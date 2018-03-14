@@ -25,11 +25,13 @@ class WorkshopController extends Controller
             'email' => 'required|email',
             'phone' => 'required',
             'workshop_term_id' => 'required|integer',
+            'confirm' => 'accepted',
         ], [
             'name.required' => 'pole "Jméno a příjmení" je povinné',
             'email.required' => 'pole "Email" je povinné',
             'email.email' => 'pole "Email" musí mít validní formát pro email',
             'phone.required' => 'pole "Telefonní číslo" je povinné',
+            'confirm.accepted' => 'musíte souhlasit se spracováním osobních údajů',
         ]);
 
         WorkshopParticipant::create($validatedData);
