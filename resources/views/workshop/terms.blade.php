@@ -65,6 +65,7 @@
                 <label>Telefonní číslo *</label>
                 <input type="text" name="phone" class="form-control" value="{{ old('phone') }}">
             </div>
+            <div>* Položky s hvězdičkou je nutné v přihlášce vyplnit.</div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">Registrovat</button>
             </div>
