@@ -58,7 +58,7 @@
     <ul>
         <li>Dozvíte se mnoho informací o tom, jak web funguje.</li>
         <li>Co je to server a jak je možné, že můj počítač ví, kam má jít, když se chci podívat na nějaký web.</li>
-        <li>Co je to doména.</li>
+        <li>Co je to doména a mnoho dalších důležitých věcí.</li>
         <li>Budu mít znalosti, k tomu abych se začal učit web programovat.</li>
         <li>Získám kontakty na další lidi, kteří s programováním začínají a můžeme se společně rozvíjet.</li>
         <li>Dostanete rady, odkazy a přístupy na materiály, které Vám při učení pomůžou.</li>
