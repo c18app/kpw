@@ -68,7 +68,7 @@
         Určitě bude ještě nějakou dobu trvat, než si naprogramujete svůj vlastní velký web.
         Nicméně čím dříve začnete a čím víc do toho dáte energie, tím dříve se Vám to podaří.
     </p>
-    <a href="{{ route('workshop.terms') }}">Chci se přihlásit</a>
+    <a href="{{ route('workshop.terms') }}" class="btn btn-success">Chci se přihlásit</a>
     <br>
     <br>
     <br>
