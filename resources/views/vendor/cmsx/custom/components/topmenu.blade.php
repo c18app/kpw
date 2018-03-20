@@ -20,10 +20,10 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ \C18app\Cmsx\Models\Page::findOrFail(17)->getUrl() }}">Kontakt</a>
+                    <a class="nav-link" href="{{ \C18app\Cmsx\Models\Page::findOrFail(19)->getUrl() }}">O mně</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ \C18app\Cmsx\Models\Page::findOrFail(19)->getUrl() }}">O mně</a>
+                    <a class="nav-link" href="{{ \C18app\Cmsx\Models\Page::findOrFail(17)->getUrl() }}">Kontakt</a>
                 </li>
                 @auth
                     <li class="nav-item">
