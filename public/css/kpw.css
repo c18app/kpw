@@ -1,0 +1,13 @@
+#main-content {
+    min-height: 750px;
+}
+#bottom-content .container {
+    height: auto;
+    min-height: 50px;
+    line-height: 50px;
+}
+
+#bottom-content .container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
