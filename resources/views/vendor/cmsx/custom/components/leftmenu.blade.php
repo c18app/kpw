@@ -1,5 +1,5 @@
 <li class="item">
-    <a href="{{ route('workshop.terms') }}">Kurzy</a>
+    <a href="{{ route('homepage') }}">Kurz</a>
 </li>
 <li class="item">
     <a href="{{ route('workshop.terms') }}">Termíny kurzů</a>
