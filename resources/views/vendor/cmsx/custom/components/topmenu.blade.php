@@ -19,6 +19,9 @@
             {{--</ul>--}}
 
             <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ \C18app\Cmsx\Models\Page::findOrFail(17)->getUrl() }}">kontakt</a>
+                </li>
                 @auth
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('logout') }}">Logout</a>
