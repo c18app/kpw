@@ -20,7 +20,7 @@
 
     <h2>Více informací</h2>
     <ul>
-        <li>Seminář se zaměřuje na čisté základy programování webu.</li>
+        <li>Kurz se zaměřuje na čisté základy programování webu.</li>
         <li>Po absolvování budete mít dobrý základ k tomu naučit se programovat weby.</li>
         <li>Pokud se do toho chcete <strong>opravdu</strong> pustit, počítejte s tím, že to pro Vás znamená hodiny práce.</li>
         <li>Naučíte se, jak se používají <strong>HTML</strong> značky.</li>
@@ -35,7 +35,7 @@
 
     <h2>Kde, jak dlouho, za kolik...</h2>
     <ul>
-        <li>Seminář bude trvat celkem 8 hodin a to od 10:00 do 18:00.</li>
+        <li>Kurz bude trvat celkem 8 hodin a to od 10:00 do 18:00.</li>
         <li>
             Sejdeme se ráno v Modré škole:<br>
             Základní škola a Střední škola<br>
@@ -43,13 +43,13 @@
             149 00 Praha 4<br>
             <strong>kousek od metra Háje</strong>
         </li>
-        <li>Cena za tento seminář je celkem 2.790,-</li>
+        <li>Cena za tento kurz je celkem 2.790,-</li>
         <li>Celkem nás bude minimálně 4 a maximálně 6 studentů.</li>
     </ul>
 
     <h2>Co si vzít s sebou</h2>
     <ul>
-        <li>Vezměte si s sebou <strong>notebook</strong>, není to podmínka, ale pak si seminář tolik neužijete, a vše budete muset zkoušet až sami doma.</li>
+        <li>Vezměte si s sebou <strong>notebook</strong>, není to podmínka, ale pak si kurz tolik neužijete, a vše budete muset zkoušet až sami doma.</li>
         <li><strong>Tužky</strong> a <strong>sešit</strong>.</li>
         <li>Dobrou náladu a chuť se učit.</li>
     </ul>

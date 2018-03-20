@@ -9,8 +9,8 @@
         </div>
     @endif
 
-    <h1>Termíny seminářů</h1>
-    <a href="{{ route('homepage') }}">Informace o semináři</a>
+    <h1>Termíny kurzů</h1>
+    <a href="{{ route('homepage') }}">Informace o kurzu</a>
 
     <table>
         @forelse ($terms as $term)
@@ -43,7 +43,7 @@
             </div>
         @endif
 
-        <h2>Registrace na seminář základy programování webu</h2>
+        <h2>Registrace na kurz základy programování webu</h2>
         <h3>(základní znalosti o programování webu)</h3>
         </p>
         <p>

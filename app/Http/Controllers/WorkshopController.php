@@ -37,11 +37,11 @@ class WorkshopController extends Controller
         WorkshopParticipant::create($validatedData);
 
         try {
-            $seminar = WorkshopTerm::find($validatedData['workshop_term_id']);
+            $kurz = WorkshopTerm::find($validatedData['workshop_term_id']);
 
             Mail::to($validatedData['email'], $validatedData['name'])
                 ->bcc('mnosavcov@gmail.com', 'Michal Nosavcov')
-                ->send(new WorkshopConfirm($seminar));
+                ->send(new WorkshopConfirm($kurz));
         } catch (\Exception $e) {
             return redirect()->route('workshop.terms')->with('notice', 'Děkuji za Vaši registraci. Registrace proběhla úspěšně, ale potvrzovací email se nepodařilo odeslat! Budu Vás co nejdříve kontaktovat.');
         }

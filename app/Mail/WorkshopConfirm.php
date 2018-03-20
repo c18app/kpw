@@ -11,16 +11,16 @@ class WorkshopConfirm extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $seminar;
+    public $kurz;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($seminar)
+    public function __construct($kurz)
     {
-        $this->seminar = $seminar;
+        $this->kurz = $kurz;
     }
 
     /**
@@ -31,7 +31,7 @@ class WorkshopConfirm extends Mailable
     public function build()
     {
         return $this->from('kpw@kpw.cz', 'KPW (Kurz Programování Webu)')
-            ->subject('[KPW] Přihláška na seminář')
+            ->subject('[KPW] Přihláška na kurz')
             ->markdown('emails.workshop.confirm');
     }
 }

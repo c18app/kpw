@@ -1,8 +1,8 @@
 @component('emails.message')
-# Přihláška na seminář Kurz Programování Webu
+# Přihláška na Kurz Programování Webu
 
-Děkuji za Vaši přihlášku na seminář, který se koná:<br>
-{{ \Carbon\Carbon::parse($seminar->beginning)->format('d.m.Y') }} od: {{ \Carbon\Carbon::parse($seminar->beginning)->format('H:i') }} do: {{ \Carbon\Carbon::parse($seminar->finish)->format('H:i') }}<br>
+Děkuji za Vaši přihlášku na kurz, který se koná:<br>
+{{ \Carbon\Carbon::parse($kurz->beginning)->format('d.m.Y') }} od: {{ \Carbon\Carbon::parse($kurz->beginning)->format('H:i') }} do: {{ \Carbon\Carbon::parse($kurz->finish)->format('H:i') }}<br>
 <br>
 Adresa:<br>
 Základní škola a Střední škola<br>
