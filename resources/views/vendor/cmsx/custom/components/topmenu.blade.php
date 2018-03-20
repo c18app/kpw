@@ -20,7 +20,10 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ \C18app\Cmsx\Models\Page::findOrFail(17)->getUrl() }}">kontakt</a>
+                    <a class="nav-link" href="{{ \C18app\Cmsx\Models\Page::findOrFail(17)->getUrl() }}">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ \C18app\Cmsx\Models\Page::findOrFail(19)->getUrl() }}">O mně</a>
                 </li>
                 @auth
                     <li class="nav-item">
@@ -30,11 +33,13 @@
                         <a class="nav-link" href="{{ route('admin.dashboard') }}"><span class="fas fa-cog"></span></a>
                     </li>
                 @endauth
+                @if(false)
                 @guest
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('login') }}">Login</a>
                     </li>
                 @endguest
+                @endif
             </ul>
         </div>
     </div>
