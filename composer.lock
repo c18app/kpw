@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c18app/cmsx-package.git",
-                "reference": "a33a323dc5f7af270cced723a7ad9b7659d0368e"
+                "reference": "e7da8e7974c1afc5e047376cdcf696c56da221fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c18app/cmsx-package/zipball/a33a323dc5f7af270cced723a7ad9b7659d0368e",
-                "reference": "a33a323dc5f7af270cced723a7ad9b7659d0368e",
+                "url": "https://api.github.com/repos/c18app/cmsx-package/zipball/e7da8e7974c1afc5e047376cdcf696c56da221fb",
+                "reference": "e7da8e7974c1afc5e047376cdcf696c56da221fb",
                 "shasum": ""
             },
             "require": {
@@ -53,7 +53,7 @@
                 "source": "https://github.com/c18app/cmsx-package/tree/master",
                 "issues": "https://github.com/c18app/cmsx-package/issues"
             },
-            "time": "2018-03-30T18:12:57+00:00"
+            "time": "2018-03-30T19:03:25+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
