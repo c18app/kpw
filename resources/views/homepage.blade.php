@@ -1,4 +1,4 @@
-@extends('cmsx::layouts.frontend')
+@extends(Config('cmsx.app.template').'::layouts.main')
 
 
 
