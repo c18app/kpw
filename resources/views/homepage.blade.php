@@ -1,6 +1,6 @@
 @extends(Config('cmsx.app.template').'::layouts.main')
 
-
+@section('content-container', 'container-fluid')
 
 @section('content')
     <img src="{{ url('img/code_945.jpg') }}" style="width: 100%;">
