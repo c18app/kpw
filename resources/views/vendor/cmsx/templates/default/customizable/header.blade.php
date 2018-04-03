@@ -1,4 +1,5 @@
 <link href="/css/kpw.css" rel="stylesheet">
+<link href="/fonts/ibm-plex/css/ibm-plex.min.css" rel="stylesheet">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115776779-1"></script>
