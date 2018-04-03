@@ -1,14 +1,28 @@
-<body class="frontend">
-@include(Config('cmsx.app.template').'::frontend.menu.top')
-<div class="container" id="main-content">
-    <div class="row">
-        <div class="col-lg-2">
-            @include(Config('cmsx.app.template').'::frontend.menu.side')
-        </div>
-        <div class="col-lg-10">
-            @yield('content')
+@if(isset($content_type) && $content_type == 'homepage')
+    <body class="frontend">
+    @include(Config('cmsx.app.template').'::frontend.menu.top')
+    <div class="container-fluid" id="main-content">
+        <div class="row">
+            <div class="col-lg-12">
+                @yield('content')
+            </div>
         </div>
     </div>
-</div>
-@include(Config('cmsx.app.template').'::frontend.menu.bottom')
-</body>
+    @include(Config('cmsx.app.template').'::frontend.menu.bottom')
+    </body>
+@else
+    <body class="frontend">
+    @include(Config('cmsx.app.template').'::frontend.menu.top')
+    <div class="container" id="main-content">
+        <div class="row">
+            <div class="col-lg-2">
+                @include(Config('cmsx.app.template').'::frontend.menu.side')
+            </div>
+            <div class="col-lg-10">
+                @yield('content')
+            </div>
+        </div>
+    </div>
+    @include(Config('cmsx.app.template').'::frontend.menu.bottom')
+    </body>
+@endif
