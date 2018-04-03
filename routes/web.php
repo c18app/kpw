@@ -12,6 +12,5 @@
 */
 
 
-Route::view('/', 'homepage')->name('homepage');
 Route::get('/terminy/{workshop_term?}', 'WorkshopController@terms')->name('workshop.terms');
 Route::post('/terminy', 'WorkshopController@register')->name('workshop.register');
