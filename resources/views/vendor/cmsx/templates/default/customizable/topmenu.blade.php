@@ -8,7 +8,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{ route('homepage') }}">{{ config('cmsx.app.name') }}</a>
+            <a class="navbar-brand" href="{{ route('homepage') }}">
+                <div class="cursor-box">
+                    <img src="{{ url('css/img/arrow.png') }}" class="arrow">
+                    <img src="{{ url('css/img/underscore.png') }}" class="underscore">
+                </div>
+                {{ config('cmsx.app.name') }}
+            </a>
         </div>
 
         <div class="collapse navbar-collapse" id="navbarAdminTop">

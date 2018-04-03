@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <img src="{{ url('img/code.png') }}">
+    <img src="{{ url('css/img/infopruh.png') }}">
     <div class="container">
         <h1>Kurz programování webu</h1>
 
