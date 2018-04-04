@@ -27,6 +27,11 @@
     animation-delay: 1s;
     animation-iteration-count: infinite;
 }
+#top-content a.navbar-brand .title {
+    font-family: "IBMPlexSans-Medium";
+    font-size: 28px;
+    color: #192243;
+}
 /* The animation code */
 @keyframes example {
     10%   {

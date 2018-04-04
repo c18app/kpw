@@ -13,7 +13,7 @@
                     <img src="{{ url('css/img/arrow.png') }}" class="arrow">
                     <img src="{{ url('css/img/underscore.png') }}" class="underscore">
                 </div>
-                {{ config('cmsx.app.name') }}
+                <span class="title">{{ config('cmsx.app.name') }}</span>
             </a>
         </div>
 
