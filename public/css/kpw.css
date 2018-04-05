@@ -100,3 +100,8 @@ body {
     color: #ee4445!important;
     border: 2px solid #ee4445!important;
 }
+
+#homepage .infopruh {
+    height: 458px;
+    background: #273043 url('img/infopruh.png') 50% 0 no-repeat;
+}

@@ -1,5 +1,5 @@
 @if(isset($content_type) && $content_type == 'homepage')
-    <body class="frontend">
+    <body class="frontend" id="homepage">
     @include(Config('cmsx.app.template').'::frontend.menu.top')
     <div class="container-fluid" id="main-content">
         <div class="row">

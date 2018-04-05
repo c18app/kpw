@@ -1,8 +1,8 @@
 @extends(Config('cmsx.app.template').'::layouts.main', ['content_type'=>'homepage'])
 
 @section('content')
-
-    <img src="{{ url('css/img/infopruh.png') }}">
+    <div class="row infopruh">
+    </div>
     <div class="container">
         <h1>Kurz programování webu</h1>
 
