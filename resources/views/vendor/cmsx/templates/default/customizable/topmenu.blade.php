@@ -25,11 +25,14 @@
             {{--</ul>--}}
 
             <ul class="nav navbar-nav navbar-right">
+                {{--<li class="nav-item{{ Request()->route()->named('homepage') ? ' active' : '' }}">--}}
+                    {{--<a class="nav-link" href="{{ route('homepage') }}">Úvod</a>--}}
+                {{--</li>--}}
+                {{--<li class="nav-item">--}}
+                    {{--<a class="nav-link" href="javascript:void(0);">Články</a>--}}
+                {{--</li>--}}
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ \C18app\Cmsx\Models\Page::findOrFail(19)->getUrl() }}">O mně</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ \C18app\Cmsx\Models\Page::findOrFail(17)->getUrl() }}">Kontakt</a>
+                    <a class="nav-link btn-red" href="#koupit-kurz">Koupit kurz</a>
                 </li>
                 @auth
                     <li class="nav-item">

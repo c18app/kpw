@@ -1,3 +1,9 @@
+body {
+    background-color: #f2f2f2;
+}
+.navbar-default {
+    background-color: #f2f2f2;
+}
 #top-content .navbar {
     height: 108px;
     border: none;
@@ -5,13 +11,14 @@
 }
 
 #top-content a.navbar-brand {
-    padding-top: 31px;
+    padding-top: 44px;
 }
 
 #top-content a.navbar-brand .cursor-box {
     width: 27px;
     height: 20px;
     position: relative;
+    display: inline-block;
 }
 #top-content a.navbar-brand .cursor-box .arrow{
     position: absolute;
@@ -31,7 +38,21 @@
     font-family: "IBMPlexSans-Medium";
     font-size: 28px;
     color: #192243;
+    margin-left: 4px;
 }
+
+#top-content .navbar-right li a {
+    margin-top: 23px;
+    font-family: "IBMPlexSans";
+    font-size: 18px;
+    color: #ee4445;
+    text-transform: uppercase;
+}
+#top-content .navbar-right li.active a {
+    font-family: "IBMPlexSans-Bold";
+    background-color: transparent!important;
+}
+
 /* The animation code */
 @keyframes example {
     10%   {
@@ -62,4 +83,20 @@
     padding-left: 0;
     line-height: 150%;
     margin-top: 10px;
+}
+
+.btn-red {
+    font-family: "IBMPlexSans-Bold"!important;
+    padding: 20px 50px!important;
+    background-color: #ee4445!important;
+    color: #f2f2f2!important;
+    text-transform: none!important;
+    font-size: 18px!important;
+    border-radius: 3px!important;
+}
+.btn-red:hover {
+    padding: 18px 48px!important;
+    background-color: #f2f2f2!important;
+    color: #ee4445!important;
+    border: 2px solid #ee4445!important;
 }
