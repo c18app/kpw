@@ -135,9 +135,9 @@
     <div class="row cena-kurzu">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-12 content">
                     Cena za kurz pro začátečníky je celkem 2 790 Kč
-                    <a href="#koupit-kurz" class="btn-white">Volné termíny</a>
+                    <span class="btn-center"><a href="#koupit-kurz" class="btn-white"><span class="sipcicka"></span>Volné termíny</a></span>
                 </div>
             </div>
         </div>

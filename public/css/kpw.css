@@ -326,6 +326,32 @@ ul.se-sipkama li.bez-sipky {
     height: 285px;
     background-color: #273043;
 }
+#homepage div.cena-kurzu .content {
+    height: 285px;
+    line-height: 285px;
+    position: relative;
+}
+#homepage div.cena-kurzu .content span.btn-center {
+    position: absolute;
+    right: 0;
+}
+#homepage div.cena-kurzu .content a {
+    position: relative;
+}
+#homepage div.cena-kurzu .content span.sipcicka {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    text-align: center;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: -5px;
+    transition: background-color .25s;
+}
+#homepage div.cena-kurzu .content a:hover span.sipcicka {
+    background-color: #ee4445;
+}
 
 #homepage div.terminy-kurzu {
     height: 100px;
