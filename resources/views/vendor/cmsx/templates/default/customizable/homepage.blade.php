@@ -2,6 +2,17 @@
 
 @section('content')
     <div class="row infopruh">
+        <div class="container">
+            <div class="line-1">&lt; Chcete se naučit</div>
+            <div class="line-2">&nbsp;&nbsp;&nbsp;&nbsp;PROGRAMOVAT WEBY? <span class="regular">/&gt;</span>&nbsp;</div>
+            <div class="clearfix"></div>
+
+            <div class="infotext">Přijďte na můj kurz. Ukážu vám, jak na to a nasměruji vás správným<br>
+                směrem. Po absolvování kurzu budete mít dobrý základ a potenciál pro<br>
+                další pokrok.
+            </div>
+            <a href="#koupit-kurz" class="btn-white">Volné termíny</a>
+        </div>
     </div>
     <div class="container">
         <h1>Kurz programování webu</h1>

@@ -1,8 +1,8 @@
 body {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
 }
 .navbar-default {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
 }
 #top-content .navbar {
     height: 108px;
@@ -86,22 +86,73 @@ body {
 }
 
 .btn-red {
+    transition: color .25s, background-color .25s;
+    text-decoration: none!important;
     font-family: "IBMPlexSans-Bold"!important;
-    padding: 20px 50px!important;
+    padding: 18px 48px!important;
     background-color: #ee4445!important;
-    color: #f2f2f2!important;
+    color: #ffffff!important;
     text-transform: none!important;
     font-size: 18px!important;
     border-radius: 3px!important;
+    border: 2px solid #ee4445!important;
+    line-height: 125%!important;
 }
 .btn-red:hover {
-    padding: 18px 48px!important;
-    background-color: #f2f2f2!important;
+    background-color: #ffffff!important;
     color: #ee4445!important;
-    border: 2px solid #ee4445!important;
+}
+
+.btn-white {
+    transition: color .25s, background-color .25s;
+    text-decoration: none!important;
+    font-family: "IBMPlexSans-Bold"!important;
+    padding: 20px 70px!important;
+    background-color: #ffffff!important;
+    color: #ee4445!important;
+    text-transform: none!important;
+    font-size: 18px!important;
+    border-radius: 3px!important;
+    line-height: 125% !important;
+}
+.btn-white:hover {
+    background-color: #ee4445!important;
+    color: #ffffff!important;
 }
 
 #homepage .infopruh {
     height: 458px;
     background: #273043 url('img/infopruh.png') 50% 0 no-repeat;
+    position: relative;
+}
+
+#homepage .infopruh .line-1 {
+    margin-top: 49px;
+    font-family: "IBMPlexSans";
+    font-size: 45px;
+    color: #fff;
+}
+
+#homepage .infopruh .line-2 {
+    font-family: "IBMPlexSans-Bold";
+    font-size: 45px;
+    color: #fff;
+    background-color: #ee4445;
+    float: left;
+    margin-top: -6px;
+    line-height: 125%;
+}
+#homepage .infopruh .line-2 span.regular {
+    font-family: "IBMPlexSans";
+}
+#homepage .infopruh .infotext {
+    font-family: "IBMPlexSans";
+    color: #fff;
+    font-size: 15px;
+    line-height: 28px;
+    margin-top: 25px;
+}
+#homepage .infopruh a {
+    position: absolute;
+    bottom: 70px;
 }
