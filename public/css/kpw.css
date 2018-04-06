@@ -156,3 +156,36 @@ body {
     position: absolute;
     bottom: 70px;
 }
+#homepage div.questions {
+    height: 320px;
+}
+
+#homepage div.prihlastese-omne {
+    height: 800px;
+    background-color: #f7f3db;
+}
+
+#homepage div.co-muzete-ocekavat {
+    height: 800px;
+    background-color: #273043;
+}
+
+#homepage div.info-o-kurzu {
+    height: 675px;
+    background-color: #f9fafa;
+}
+
+#homepage div.cena-kurzu {
+    height: 285px;
+    background-color: #273043;
+}
+
+#homepage div.terminy-kurzu {
+    height: 100px;
+}
+
+#homepage div.sdileni {
+    height: 475px;
+    background-color: #f7f3db;
+}
+

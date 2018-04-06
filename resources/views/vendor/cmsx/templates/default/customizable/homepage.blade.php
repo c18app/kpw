@@ -14,6 +14,115 @@
             <a href="#koupit-kurz" class="btn-white">Volné termíny</a>
         </div>
     </div>
+
+    <div class="container questions">
+        <div class="row">
+            <div class="col-xs-4 text-center">
+                test1
+            </div>
+            <div class="col-xs-4 text-center">
+                test2
+            </div>
+            <div class="col-xs-4 text-center">
+                test3
+            </div>
+        </div>
+    </div>
+
+    <div class="row prihlastese-omne">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 text-center">
+                    test1
+                </div>
+                <div class="col-xs-4 text-center">
+                    test2
+                </div>
+                <div class="col-xs-4 text-center">
+                    test3
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row co-muzete-ocekavat">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 text-center">
+                    test1
+                </div>
+                <div class="col-xs-4 text-center">
+                    test2
+                </div>
+                <div class="col-xs-4 text-center">
+                    test3
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row info-o-kurzu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 text-center">
+                    test1
+                </div>
+                <div class="col-xs-4 text-center">
+                    test2
+                </div>
+                <div class="col-xs-4 text-center">
+                    test3
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row cena-kurzu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 text-center">
+                    test1
+                </div>
+                <div class="col-xs-4 text-center">
+                    test2
+                </div>
+                <div class="col-xs-4 text-center">
+                    test3
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container terminy-kurzu">
+        <div class="row">
+            <div class="col-xs-4 text-center">
+                test1
+            </div>
+            <div class="col-xs-4 text-center">
+                test2
+            </div>
+            <div class="col-xs-4 text-center">
+                test3
+            </div>
+        </div>
+    </div>
+
+    <div class="row sdileni">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 text-center">
+                    test1
+                </div>
+                <div class="col-xs-4 text-center">
+                    test2
+                </div>
+                <div class="col-xs-4 text-center">
+                    test3
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <h1>Kurz programování webu</h1>
 
