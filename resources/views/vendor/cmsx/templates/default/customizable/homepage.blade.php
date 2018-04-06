@@ -38,10 +38,10 @@
     <div class="row prihlastese-omne">
         <div class="container">
             <div class="row">
-                <div class="col-xs-6 text-center">
+                <div class="col-xs-6">
                     <div class="title">Přihlaste se na kurz</div>
                     <div class="subtitle">a naučte se základy,<br>zvládneme to za 8 hodin</div>
-                    <ul>
+                    <ul class="se-sipkama">
                         <li>Kurz se zaměřuje na čisté základy a po absolvování budete mít dobrý základ k tomu naučit se
                             programovat weby.
                         </li>
@@ -56,11 +56,19 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-xs-6 text-center">
+                <div class="col-xs-5 col-xs-offset-1">
                     <div class="title">Něco o mně</div>
                     <div class="subtitle">pomůžu vám<br>udělat první krok</div>
                     <div class="content">
-                        <img src="/img/me.png">
+                        <div class="img-wrap">
+                            <img src="/img/me.png">
+                        </div>
+                        <span class="text-justify">O Programování se zajímám už od roku 1989. Od roku 2009 se profesionálně zabývám programováním webových stránek v PHP.</span>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="content-bottom">
+                        Mám bohaté zkušenosti jako freelancer s prací ve velkých firmách jako: <a href="#">Economia, a.s</a> (ihned.cz, aktualne.cz), FORTUNA GAME a.s., CCS Česká společnost pro platební karty s.r.o., Patria Finance, a.s. Věřím, že jsem schopný, předat na semináři zajímavé a podnětné informace, které vám pomůžou udělat první krok.
                     </div>
                 </div>
             </div>

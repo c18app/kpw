@@ -158,7 +158,7 @@ body {
 }
 #homepage div.questions {
     padding-top: 35px;
-    padding-bottom: 35px;
+    padding-bottom: 40px;
 }
 #homepage div.question-mark {
     font-family: "IBMPlexSans-Light";
@@ -181,8 +181,69 @@ body {
 }
 
 #homepage div.prihlastese-omne {
-    height: 800px;
+    padding-top: 70px;
+    padding-bottom: 150px;
     background-color: #f7f3db;
+}
+#homepage div.prihlastese-omne .title {
+    font-family: "IBMPlexSans-Bold";
+    font-size: 45px;
+    color: #273043;
+}
+#homepage div.prihlastese-omne .subtitle {
+    font-family: "IBMPlexSans-Light";
+    font-size: 28px;
+    line-height: 125%;
+    color: #273043;
+    margin-bottom: 50px;
+}
+#homepage div.prihlastese-omne .content {
+    position: relative;
+}
+#homepage div.prihlastese-omne .content .img-wrap {
+    width: 216px;
+    height: 216px;
+    padding: 18px;
+    background-color: #fff;
+    margin-right: 35px;
+    margin-bottom: 35px;
+    float: left;
+}
+#homepage div.prihlastese-omne .content img {
+    width: 180px;
+    height: 180px;
+}
+#homepage div.prihlastese-omne .content span {
+    position: absolute;
+    bottom: 35px;
+    font-family: "IBMPlexSans";
+    color: #0a0f0d;
+    font-size: 17px;
+    line-height: 150%;
+}
+#homepage div.prihlastese-omne .content-bottom {
+    font-family: "IBMPlexSans";
+    color: #0a0f0d;
+    font-size: 17px;
+    line-height: 150%;
+}
+#homepage div.prihlastese-omne .content-bottom a {
+    font-family: "IBMPlexSans-Bold";
+    color: #273043;
+    font-size: 19px;
+}
+ul.se-sipkama {
+    padding-left: 0;
+    list-style: none;
+}
+ul.se-sipkama li {
+    font-family: "IBMPlexSans";
+    padding-left: 50px;
+    background: transparent url("img/sipka.png") 1px 4px no-repeat;
+    font-size: 17px;
+    line-height: 150%;
+    color: #0a0f0d;
+    margin-bottom: 20px;
 }
 
 #homepage div.co-muzete-ocekavat {
