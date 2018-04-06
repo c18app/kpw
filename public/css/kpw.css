@@ -248,6 +248,10 @@ ul.se-sipkama li {
 ul.se-sipkama-white li {
     color: #ffffff;
 }
+ul.se-sipkama li.bez-sipky {
+    background-image: none;
+}
+
 
 #homepage div.co-muzete-ocekavat {
     padding-top: 70px;
@@ -286,8 +290,36 @@ ul.se-sipkama-white li {
 }
 
 #homepage div.info-o-kurzu {
-    height: 675px;
+    padding-top: 80px;
+    padding-bottom: 115px;
     background-color: #f9fafa;
+}
+#homepage div.info-o-kurzu .title {
+    font-family: "IBMPlexSans-Bold";
+    font-size: 45px;
+    line-height: 125%;
+    color: #192243;
+    margin-bottom: 70px;
+}
+#homepage div.info-o-kurzu .content {
+    font-family: "IBMPlexSans";
+    font-size: 17px;
+    color: #0a0f0d;
+}
+#homepage div.info-o-kurzu .content span {
+    font-family: "IBMPlexSans-Bold";
+    color: #ee4445;
+}
+#homepage div.info-o-kurzu .content a span {
+    text-decoration: underline;
+}
+#homepage div.info-o-kurzu .content a:hover,
+#homepage div.info-o-kurzu .content a:hover span {
+    text-decoration: none;
+}
+#homepage div.info-o-kurzu .content .misto {
+    margin-left: 15px;
+    margin-top: -5px;
 }
 
 #homepage div.cena-kurzu {

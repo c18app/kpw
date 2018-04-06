@@ -103,28 +103,29 @@
     <div class="row info-o-kurzu">
         <div class="container">
             <div class="row">
-                <div class="col-xs-6 text-center">
+                <div class="col-xs-6">
                     <div class="title">Kde, jak dlouho,<br>za kolik?</div>
-                    <div class="content">Kurz bude trvat celkem 8 hodin a to od 10:00 do 18:00.
-                        Bude se konat pro min. 4 a max. 6 osob.
-
-                        Sejdeme se v 10 ráno v Modré škole:
-
-                        Základní škola a Střední škola
-                        Kupeckého 576
-                        149 00 Praha 4
-                        kousek od metra Háje
-
-                        Ukázat na mapě
+                    <div class="content">Kurz bude trvat celkem <span>8 hodin</span> a to od 10:00 do 18:00.<br>
+                        Bude se konat pro min. <span>4</span> a max. <span>6 osob.</span><br>
+                        <br>
+                        Sejdeme se v 10 ráno v Modré škole:<br>
+                        <br>
+                        Základní škola a Střední škola<br>
+                        Kupeckého 576<br>
+                        149 00 Praha 4<br>
+                        kousek od metra Háje<br>
+                        <br>
+                        <a href="#"><span>Ukázat na mapě</span></a>
+                        <img src="img/misto.png" class="misto">
                     </div>
 
                 </div>
-                <div class="col-xs-6 text-center">
+                <div class="col-xs-6">
                     <div class="title">Co<br>si vzít sebou?</div>
-                    <ul>
+                    <ul class="se-sipkama">
                         <li>Vezměte si s sebou notebook, není to podmínka, ale pak si kurz tolik neužijete, a vše budete muset zkoušet až sami doma.</li>
                         <li>Tužky a sešit, dobrou náladu a chuť se učit.</li>
-                        <li>Určitě bude ještě nějakou dobu trvat, než si naprogramujete svůj vlastní velký web. Nicméně čím dříve začnete a čím víc do toho dáte energie, tím dříve se Vám to podaří.</li>
+                        <li class="bez-sipky">Určitě bude ještě nějakou dobu trvat, než si naprogramujete svůj vlastní velký web. Nicméně čím dříve začnete a čím víc do toho dáte energie, tím dříve se Vám to podaří.</li>
                     </ul>
                 </div>
             </div>
@@ -144,7 +145,7 @@
 
     <div class="container terminy-kurzu">
         <div class="row">
-            <div class="col-xs-12 text-center">
+            <div class="col-xs-12">
                 <div class="title">Termíny<br>kurzů programování</div>
             </div>
         </div>
@@ -153,11 +154,11 @@
     <div class="row sdileni">
         <div class="container">
             <div class="row">
-                <div class="col-xs-6 text-center">
+                <div class="col-xs-6">
                     <div class="title">Cenné zkušenosti<br>do vaší schránky</div>
                     <div class="description">Nechte mi prosím e-mail,<br>na který vám občas pošlu zajímavé tipy a pracně nabyté materiály.</div>
                 </div>
-                <div class="col-xs-6 text-center">
+                <div class="col-xs-6">
                     <div class="title">Sdílejte stránku<br>s přáteli,&nbsp;&nbsp;díky!</div>
                 </div>
             </div>
