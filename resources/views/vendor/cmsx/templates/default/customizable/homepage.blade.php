@@ -20,17 +20,17 @@
             <div class="col-xs-4 text-center">
                 <div class="question-mark">?</div>
                 <div class="line-1">CSS, Php, MySQL<br>jsou pro vás sprostá slova?</div>
-                <div class="line-2">chcete vědět, co znamenají tajemné zápisy<br>jako by byly z vesmíru?</div>
+                <div class="line-2">chcete vědět, co znamenají tajemné zápisy jako by byly z vesmíru?</div>
             </div>
             <div class="col-xs-4 text-center">
                 <div class="question-mark">?</div>
                 <div class="line-1">Nevíte, jak začít<br>a váháte?</div>
-                <div class="line-2">chcete se naučit programovat web a<br>zatím jste nevěděli odkud se do toho pustit?</div>
+                <div class="line-2">chcete se naučit programovat web&nbsp;a zatím jste nevěděli odkud se do toho pustit?</div>
             </div>
             <div class="col-xs-4 text-center">
                 <div class="question-mark">?</div>
                 <div class="line-1">Jste začátečníci, nebo<br>už se trochu vyznáte?</div>
-                <div class="line-2">láká vás vyzkoušet si naprogramovat vlastní web<br>úplně od začátku, nebo chcete pokročit dál?</div>
+                <div class="line-2">láká vás vyzkoušet si naprogramovat vlastní web úplně od začátku, nebo chcete pokročit dál?</div>
             </div>
         </div>
     </div>

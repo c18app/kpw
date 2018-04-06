@@ -157,7 +157,27 @@ body {
     bottom: 70px;
 }
 #homepage div.questions {
-    height: 320px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+#homepage div.question-mark {
+    font-family: "IBMPlexSans-Light";
+    color: #ee4445;
+    font-size: 45px;
+}
+#homepage div.line-1 {
+    font-family: "IBMPlexSans-Bold";
+    color: #192243;
+    font-size: 28px;
+    line-height: 125%;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+#homepage div.line-2 {
+    font-family: "IBMPlexSans";
+    color: #0a0f0d;
+    font-size: 17px;
+    line-height: 175%;
 }
 
 #homepage div.prihlastese-omne {
