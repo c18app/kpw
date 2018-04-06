@@ -18,13 +18,19 @@
     <div class="container questions">
         <div class="row">
             <div class="col-xs-4 text-center">
-                test1
+                <div class="question-mark">?</div>
+                <div class="line-1">CSS, Php, MySQL<br>jsou pro vás sprostá slova?</div>
+                <div class="line-2">chcete vědět, co znamenají tajemné zápisy<br>jako by byly z vesmíru?</div>
             </div>
             <div class="col-xs-4 text-center">
-                test2
+                <div class="question-mark">?</div>
+                <div class="line-1">Nevíte, jak začít<br>a váháte?</div>
+                <div class="line-2">chcete se naučit programovat web a<br>zatím jste nevěděli odkud se do toho pustit?</div>
             </div>
             <div class="col-xs-4 text-center">
-                test3
+                <div class="question-mark">?</div>
+                <div class="line-1">Jste začátečníci, nebo<br>už se trochu vyznáte?</div>
+                <div class="line-2">láká vás vyzkoušet si naprogramovat vlastní web<br>úplně od začátku, nebo chcete pokročit dál?</div>
             </div>
         </div>
     </div>
@@ -32,14 +38,30 @@
     <div class="row prihlastese-omne">
         <div class="container">
             <div class="row">
-                <div class="col-xs-4 text-center">
-                    test1
+                <div class="col-xs-6 text-center">
+                    <div class="title">Přihlaste se na kurz</div>
+                    <div class="subtitle">a naučte se základy,<br>zvládneme to za 8 hodin</div>
+                    <ul>
+                        <li>Kurz se zaměřuje na čisté základy a po absolvování budete mít dobrý základ k tomu naučit se
+                            programovat weby.
+                        </li>
+                        <li>Naučíte se, jak se používají HTML značky, dozvíte se, k čemu je CSS a k čemu se používá
+                            JavaScript.
+                        </li>
+                        <li>Programování logiky webu bude probíhat v PHP, povíme si i o frameworku Laravel.</li>
+                        <li>Popíšeme si, k čemu a jak se používají databáze v tomto konkrétním případě MySQL.</li>
+                        <li>Dozvíte se další informace o věcech jako GIT a composer.</li>
+                        <li>Ukážeme si nástroje, které nám usnadní práci při vývoji a řekneme si, co potřebujete k
+                            vytvoření webu.
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-xs-4 text-center">
-                    test2
-                </div>
-                <div class="col-xs-4 text-center">
-                    test3
+                <div class="col-xs-6 text-center">
+                    <div class="title">Něco o mně</div>
+                    <div class="subtitle">pomůžu vám<br>udělat první krok</div>
+                    <div class="content">
+                        <img src="/img/me.png">
+                    </div>
                 </div>
             </div>
         </div>
@@ -48,14 +70,21 @@
     <div class="row co-muzete-ocekavat">
         <div class="container">
             <div class="row">
-                <div class="col-xs-4 text-center">
-                    test1
+                <div class="col-xs-6 text-center">
+                    <div class="title">Co můžete očekávat</div>
+                    <div class="subtitle">získáte zajímavé a podnětné informace</div>
+                    <ul>
+                        <li>Dozvíte se mnoho informací o tom, jak web funguje, Co je to doména a mnoho dalších důležitých věcí.</li>
+                        <li>Co je to server a jak je možné, že můj počítač ví, kam má jít, když se chcete podívat na nějaký web.</li>
+                        <li>Budete mít znalosti, k tomu abyste se konečně začali učit web programovat.</li>
+                        <li>Získáte kontakty na další lidi, kteří s programováním začínají a můžeme se společně rozvíjet.</li>
+                        <li>Dostanete rady, odkazy a přístupy na materiály, které vám při učení pomůžou.</li>
+                    </ul>
                 </div>
-                <div class="col-xs-4 text-center">
-                    test2
-                </div>
-                <div class="col-xs-4 text-center">
-                    test3
+                <div class="col-xs-6 text-center">
+                    <div class="content">
+                        <img src="/img/me.png">
+                    </div>
                 </div>
             </div>
         </div>
@@ -64,14 +93,29 @@
     <div class="row info-o-kurzu">
         <div class="container">
             <div class="row">
-                <div class="col-xs-4 text-center">
-                    test1
+                <div class="col-xs-6 text-center">
+                    <div class="title">Kde, jak dlouho,<br>za kolik?</div>
+                    <div class="content">Kurz bude trvat celkem 8 hodin a to od 10:00 do 18:00.
+                        Bude se konat pro min. 4 a max. 6 osob.
+
+                        Sejdeme se v 10 ráno v Modré škole:
+
+                        Základní škola a Střední škola
+                        Kupeckého 576
+                        149 00 Praha 4
+                        kousek od metra Háje
+
+                        Ukázat na mapě
+                    </div>
+
                 </div>
-                <div class="col-xs-4 text-center">
-                    test2
-                </div>
-                <div class="col-xs-4 text-center">
-                    test3
+                <div class="col-xs-6 text-center">
+                    <div class="title">Co<br>si vzít sebou?</div>
+                    <ul>
+                        <li>Vezměte si s sebou notebook, není to podmínka, ale pak si kurz tolik neužijete, a vše budete muset zkoušet až sami doma.</li>
+                        <li>Tužky a sešit, dobrou náladu a chuť se učit.</li>
+                        <li>Určitě bude ještě nějakou dobu trvat, než si naprogramujete svůj vlastní velký web. Nicméně čím dříve začnete a čím víc do toho dáte energie, tím dříve se Vám to podaří.</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -80,14 +124,9 @@
     <div class="row cena-kurzu">
         <div class="container">
             <div class="row">
-                <div class="col-xs-4 text-center">
-                    test1
-                </div>
-                <div class="col-xs-4 text-center">
-                    test2
-                </div>
-                <div class="col-xs-4 text-center">
-                    test3
+                <div class="col-xs-12">
+                    Cena za kurz pro začátečníky je celkem 2 790 Kč
+                    <a href="#koupit-kurz" class="btn-white">Volné termíny</a>
                 </div>
             </div>
         </div>
@@ -95,14 +134,8 @@
 
     <div class="container terminy-kurzu">
         <div class="row">
-            <div class="col-xs-4 text-center">
-                test1
-            </div>
-            <div class="col-xs-4 text-center">
-                test2
-            </div>
-            <div class="col-xs-4 text-center">
-                test3
+            <div class="col-xs-12 text-center">
+                <div class="title">Termíny<br>kurzů programování</div>
             </div>
         </div>
     </div>
@@ -110,14 +143,12 @@
     <div class="row sdileni">
         <div class="container">
             <div class="row">
-                <div class="col-xs-4 text-center">
-                    test1
+                <div class="col-xs-6 text-center">
+                    <div class="title">Cenné zkušenosti<br>do vaší schránky</div>
+                    <div class="description">Nechte mi prosím e-mail,<br>na který vám občas pošlu zajímavé tipy a pracně nabyté materiály.</div>
                 </div>
-                <div class="col-xs-4 text-center">
-                    test2
-                </div>
-                <div class="col-xs-4 text-center">
-                    test3
+                <div class="col-xs-6 text-center">
+                    <div class="title">Sdílejte stránku<br>s přáteli,&nbsp;&nbsp;díky!</div>
                 </div>
             </div>
         </div>
