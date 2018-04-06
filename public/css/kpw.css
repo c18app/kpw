@@ -245,10 +245,44 @@ ul.se-sipkama li {
     color: #0a0f0d;
     margin-bottom: 20px;
 }
+ul.se-sipkama-white li {
+    color: #ffffff;
+}
 
 #homepage div.co-muzete-ocekavat {
-    height: 800px;
+    padding-top: 70px;
+    padding-bottom: 175px;
     background-color: #273043;
+}
+#homepage div.co-muzete-ocekavat .title {
+    font-family: "IBMPlexSans-Bold";
+    font-size: 45px;
+    color: #f7f3db;
+}
+#homepage div.co-muzete-ocekavat .subtitle {
+    font-family: "IBMPlexSans-Light";
+    font-size: 28px;
+    color: #f7f3db;
+    margin-bottom: 85px;
+}
+#homepage div.co-muzete-ocekavat .content {
+    position: relative;
+}
+
+#homepage div.co-muzete-ocekavat .content .img-1 {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+#homepage div.co-muzete-ocekavat .content .img-2 {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+#homepage div.co-muzete-ocekavat .content .img-3 {
+    position: absolute;
+    top: 300px;
+    left: -50px;
 }
 
 #homepage div.info-o-kurzu {

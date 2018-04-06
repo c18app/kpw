@@ -78,10 +78,10 @@
     <div class="row co-muzete-ocekavat">
         <div class="container">
             <div class="row">
-                <div class="col-xs-6 text-center">
+                <div class="col-xs-7">
                     <div class="title">Co můžete očekávat</div>
                     <div class="subtitle">získáte zajímavé a podnětné informace</div>
-                    <ul>
+                    <ul class="se-sipkama se-sipkama-white">
                         <li>Dozvíte se mnoho informací o tom, jak web funguje, Co je to doména a mnoho dalších důležitých věcí.</li>
                         <li>Co je to server a jak je možné, že můj počítač ví, kam má jít, když se chcete podívat na nějaký web.</li>
                         <li>Budete mít znalosti, k tomu abyste se konečně začali učit web programovat.</li>
@@ -89,9 +89,11 @@
                         <li>Dostanete rady, odkazy a přístupy na materiály, které vám při učení pomůžou.</li>
                     </ul>
                 </div>
-                <div class="col-xs-6 text-center">
+                <div class="col-xs-4 col-xs-offset-1">
                     <div class="content">
-                        <img src="/img/me.png">
+                        <img src="/img/pic01.png" class="img-1">
+                        <img src="/img/pic02.png" class="img-2">
+                        <img src="/img/pic03.png" class="img-3">
                     </div>
                 </div>
             </div>
