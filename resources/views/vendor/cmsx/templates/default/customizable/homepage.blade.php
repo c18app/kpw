@@ -11,7 +11,7 @@
                 směrem. Po absolvování kurzu budete mít dobrý základ a potenciál pro<br>
                 další pokrok.
             </div>
-            <a href="#koupit-kurz" class="btn-white">Volné termíny</a>
+            <a href="#koupit-kurz" class="btn-white scroll-btn">Volné termíny</a>
         </div>
     </div>
 
@@ -115,7 +115,7 @@
                         149 00 Praha 4<br>
                         kousek od metra Háje<br>
                         <br>
-                        <a href="#"><span>Ukázat na mapě</span></a>
+                        <a href="https://mapy.cz/s/2wOo0" target="_blank"><span>Ukázat na mapě</span></a>
                         <img src="img/misto.png" class="misto">
                     </div>
 
@@ -137,13 +137,13 @@
             <div class="row">
                 <div class="col-xs-12 content">
                     Cena za kurz pro začátečníky je celkem 2 790 Kč
-                    <span class="btn-center"><a href="#koupit-kurz" class="btn-white"><span class="sipcicka"></span>Volné termíny</a></span>
+                    <span class="btn-center"><a href="#koupit-kurz" class="btn-white scroll-btn"><span class="sipcicka"></span>Volné termíny</a></span>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container terminy-kurzu">
+    <div class="container terminy-kurzu" id="koupit-kurz">
         <div class="row">
             <div class="col-xs-12">
                 <div class="title">Termíny<br>kurzů programování</div>
@@ -236,4 +236,15 @@
         <br>
         <br>
     </div>
+
+    <script>
+        $(document).ready(function (){
+            $(".scroll-btn").click(function (event){
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $($(this).attr('href')).offset().top
+                }, 800);
+            });
+        });
+    </script>
 @endsection
