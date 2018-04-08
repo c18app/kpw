@@ -5,6 +5,9 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
 ?>
 
 @section('content')
+    <div class="container">
+    @include(Config('cmsx.app.template').'::flash')
+    </div>
     <div class="row infopruh">
         <div class="container">
             <div class="line-1">&lt; Chcete se naučit</div>
@@ -164,7 +167,7 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
                         </div>
 
                         <div class="form-form" id="form-termin-{{ $term->id }}">
-                            <form action="">
+                            <form action="{{ route('workshop.register') }}" method="post">
                                 {{ csrf_field() }}
                                 <input type="hidden" name="workshop_term_id" value="{{ $term->id }}">
                                 <div class="col-xs-4">
@@ -306,12 +309,6 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
             Určitě bude ještě nějakou dobu trvat, než si naprogramujete svůj vlastní velký web.
             Nicméně čím dříve začnete a čím víc do toho dáte energie, tím dříve se Vám to podaří.
         </p>
-        <a href="{{ route('workshop.terms') }}" class="btn btn-success">Chci se přihlásit</a>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
     </div>
 
     <script>
