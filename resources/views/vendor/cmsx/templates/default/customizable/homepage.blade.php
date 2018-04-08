@@ -143,7 +143,7 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 content">
-                    Cena za kurz pro začátečníky je celkem 2 790 Kč
+                    <div class="description"> Cena za kurz pro začátečníky je celkem <span class="cena">2&nbsp;790</span> Kč</div>
                     <span class="btn-center"><a href="#koupit-kurz" class="btn-white scroll-btn"><span class="sipcicka"></span>Volné termíny</a></span>
                 </div>
             </div>
