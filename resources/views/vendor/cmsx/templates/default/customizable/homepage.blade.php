@@ -1,5 +1,9 @@
 @extends(Config('cmsx.app.template').'::layouts.main', ['content_type'=>'homepage'])
 
+<?php
+$terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
+?>
+
 @section('content')
     <div class="row infopruh">
         <div class="container">
@@ -147,6 +151,64 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="title">Termíny<br>kurzů programování</div>
+                <div class="forms">
+                    @forelse($terms as $term)
+                    <div class="form-wrap">
+                        <div class="form-text">
+                            <div class="col-1 col-xs-2">Základy<br>programování</div>
+                            <div class="col-2x col-xs-2 text">{{ \Carbon\Carbon::parse($term->beginning)->format('d.m.Y') }}<br>(Od {{ \Carbon\Carbon::parse($term->beginning)->format('H') }} do {{  \Carbon\Carbon::parse($term->finish)->format('H') }} hod)</div>
+                            <div class="col-2x col-xs-3 text">ZŠ a SŠ Kupeckého 576<br>Praha 4</div>
+                            <div class="col-2x col-xs-2 text" style="margin-top: 30px;">Cena: <span class="cena">2&nbsp;790 Kč</span></div>
+                            <div class="col-2x col-xs-3 text text-right" style="margin-top: 9px;"><button type="button" class="btn-red" onclick="$('.form-form').not('#form-termin-{{ $term->id }}').slideUp(); $('#form-termin-{{ $term->id }}').slideDown();">Koupit kurz</button></div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="form-form" id="form-termin-{{ $term->id }}">
+                            <form action="">
+                                {{ csrf_field() }}
+                                <input type="hidden" name="workshop_term_id" value="{{ $term->id }}">
+                                <div class="col-xs-4">
+                                <div class="form-group">
+                                    <label class="red">Jméno a příjmení</label>
+                                    <input type="text" name="name" class="form-control input-text" value="{{ old('name') }}">
+                                </div>
+                                </div>
+
+                                <div class="col-xs-3">
+                                <div class="form-group">
+                                    <label class="red">Váš e-mail</label>
+                                    <input type="text" name="email" class="form-control input-text" value="{{ old('email') }}">
+                                </div>
+                                </div>
+
+                                <div class="col-xs-3">
+                                <div class="form-group">
+                                    <label class="red">Telefon na vás</label>
+                                    <input type="text" name="phone" class="form-control input-text" value="{{ old('phone') }}">
+                                </div>
+                                </div>
+
+                                <div class="col-xs-12">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="confirm" value="on" {{ old('confirm') ? 'checked="checked"' : '' }}> Odesláním souhlasím se <a href="{{ \C18app\Cmsx\Models\Page::firstOrNew(['id' => 18])->getUrl() }}" target="_blank" class="ochrana">zpracováním osobních údajů</a>
+                                    </label>
+                                </div>
+                                </div>
+
+                                <div class="col-xs-12">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-red">Koupit kurz</button>
+                                </div>
+                                </div>
+                            </form>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    @empty
+                        nejsou žádné volné terminy
+                    @endforelse
+                </div>
             </div>
         </div>
     </div>
@@ -161,10 +223,12 @@
                     </div>
                     <div class="row">
                         <form action="">
-                        <div class="col-xs-7"><input type="email" name="subscribe-email" value="" placeholder="Váš e-mail"></div>
-                        <div class="col-xs-5">
-                            <button type="submit" class="btn-red">Vložit e-mail</button>
-                        </div>
+                            {{ csrf_field() }}
+                            <div class="col-xs-7"><input type="email" name="subscribe-email" value=""
+                                                         placeholder="Váš e-mail"></div>
+                            <div class="col-xs-5">
+                                <button type="submit" class="btn-red">Vložit e-mail</button>
+                            </div>
                         </form>
                     </div>
                 </div>

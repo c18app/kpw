@@ -368,7 +368,61 @@ ul.se-sipkama li.bez-sipky {
 }
 
 #homepage div.terminy-kurzu {
-    height: 100px;
+    padding-top: 75px;
+    padding-bottom: 110px;
+}
+#homepage div.terminy-kurzu .title {
+    font-family: "IBMPlexSans-Bold";
+    color: #141934;
+    font-size: 45px;
+    line-height: 125%;
+    margin-bottom: 80px;
+}
+
+#homepage div.terminy-kurzu .forms .form-wrap {
+    background-color: #f7f3db;
+}
+#homepage div.terminy-kurzu .forms .form-wrap:nth-child(even) {
+    background-color: #fbf8e6;
+}
+#homepage div.terminy-kurzu .forms .form-wrap .form-text {
+    min-height: 80px;
+}
+#homepage div.terminy-kurzu .forms .form-wrap .form-text .col-1 {
+    font-family: "IBMPlexSans-Bold";
+    color: #273043;
+    font-size: 17px;
+    line-height: 125%;
+    margin-top: 20px;
+}
+#homepage div.terminy-kurzu .forms .form-wrap .form-text .col-2x {
+    font-family: "IBMPlexSans-Light";
+    color: #273043;
+    font-size: 17px;
+    line-height: 125%;
+    margin-top: 20px;
+}
+#homepage div.terminy-kurzu .forms .form-wrap .form-text .cena {
+    font-family: "IBMPlexSans-Bold";
+    color: #ee4445;
+}
+#homepage div.terminy-kurzu .forms .form-wrap .form-form {
+    display: none;
+}
+#homepage div.terminy-kurzu .forms .form-wrap label.red {
+    font-family: "IBMPlexSans-Bold";
+    color: #ee4445;
+    font-size: 17px;
+}
+#homepage div.terminy-kurzu .forms .form-wrap a.ochrana {
+    color: #ee4445;
+}
+#homepage div.terminy-kurzu .forms .form-wrap .input-text {
+    font-family: "IBMPlexSans-Bold";
+    font-size: 17px;
+    border-color: #e6e2cc;
+    background-color: #f9f8f1;
+    height: 45px;
 }
 
 #homepage div.sdileni {

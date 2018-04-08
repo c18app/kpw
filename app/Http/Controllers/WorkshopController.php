@@ -12,12 +12,6 @@ use App\Mail\WorkshopConfirm;
 
 class WorkshopController extends Controller
 {
-    public function terms(Request $request, WorkshopTerm $workshop_term = null)
-    {
-        $terms = WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
-        return view('workshop.terms', ['terms' => $terms, 'register' => $workshop_term]);
-    }
-
     public function register(Request $request)
     {
         $validatedData = $request->validate([
