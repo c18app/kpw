@@ -1,7 +1,7 @@
 {
-    "name": "c18app/kpw",
-    "description": "Kurz programování webu.",
-    "keywords": ["KPW"],
+    "name": "c18app/programovaniwebu",
+    "description": "Programování webu.",
+    "keywords": ["Programování, web"],
     "license": "MIT",
     "type": "project",
     "repositories": [

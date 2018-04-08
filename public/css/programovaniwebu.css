@@ -370,7 +370,20 @@ ul.se-sipkama li.bez-sipky {
 }
 
 #homepage div.sdileni {
-    height: 475px;
+    padding-top: 75px;
+    padding-bottom: 115px;
     background-color: #f7f3db;
 }
 
+#homepage div.sdileni .title {
+    font-family: "IBMPlexSans-Bold";
+    color: #273043;
+    font-size: 45px;
+    line-height: 125%;
+    margin-bottom: 50px;
+}
+#homepage div.sdileni .description {
+    color: #0a0f0d;
+    font-size: 17px;
+    line-height: 125%;
+}

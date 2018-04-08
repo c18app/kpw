@@ -30,8 +30,8 @@ class WorkshopConfirm extends Mailable
      */
     public function build()
     {
-        return $this->from('kpw@kpw.cz', 'KPW (Kurz Programování Webu)')
-            ->subject('[KPW] Přihláška na kurz')
+        return $this->from('kurz@programovaniwebu.cz', 'Programování Webu')
+            ->subject('Přihláška na kurz')
             ->markdown('emails.workshop.confirm');
     }
 }

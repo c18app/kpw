@@ -2,7 +2,7 @@
     {{-- Header --}}
     @slot('header')
         @component('mail::header', ['url' => config('app.url')])
-            KPW (Kurz Programování Webu)
+            Programování Webu
         @endcomponent
     @endslot
 
@@ -21,7 +21,7 @@
     {{-- Footer --}}
     @slot('footer')
         @component('mail::footer')
-            © {{ date('Y') }} KPW (Kurz Programování Webu)
+            © {{ date('Y') }} Programování Webu
         @endcomponent
     @endslot
 @endcomponent
