@@ -154,12 +154,25 @@
     <div class="row sdileni">
         <div class="container">
             <div class="row">
-                <div class="col-xs-6">
+                <div class="col-xs-7">
                     <div class="title">Cenné zkušenosti<br>do vaší schránky</div>
-                    <div class="description">Nechte mi prosím e-mail,<br>na který vám občas pošlu zajímavé tipy a pracně nabyté materiály.</div>
+                    <div class="description">Nechte mi prosím e-mail,<br>na který vám občas pošlu zajímavé tipy a pracně
+                        nabyté materiály.
+                    </div>
+                    <div class="row">
+                        <form action="">
+                        <div class="col-xs-7"><input type="email" name="subscribe-email" value="" placeholder="Váš e-mail"></div>
+                        <div class="col-xs-5">
+                            <button type="submit" class="btn-red">Vložit e-mail</button>
+                        </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="col-xs-6">
+                <div class="col-xs-5">
                     <div class="title">Sdílejte stránku<br>s přáteli,&nbsp;&nbsp;díky!</div>
+                    <div class="fb-share-button" data-href="{{ url()->current() }}" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(url()->current()) }}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Sdílet</a></div>
+                    <div class="clearfix"></div>
+                    <div class="fb-page" data-href="https://www.facebook.com/kurzprogramovaniwebu/" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/kurzprogramovaniwebu/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/kurzprogramovaniwebu/">Kurz programování webu</a></blockquote></div>
                 </div>
             </div>
         </div>

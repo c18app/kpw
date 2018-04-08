@@ -382,10 +382,29 @@ ul.se-sipkama li.bez-sipky {
     color: #273043;
     font-size: 45px;
     line-height: 125%;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
 }
 #homepage div.sdileni .description {
     color: #0a0f0d;
     font-size: 17px;
     line-height: 125%;
+    margin-bottom: 25px;
+}
+#homepage div.sdileni form input::placeholder {
+    color: #cbc9bd;
+}
+#homepage div.sdileni form input {
+    font-family: "IBMPlexSans-Light";
+    color: #273043;
+    font-size: 17px;
+    width: 100%;
+    border: none;
+    height: 62px;
+    line-height: 62px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 3px;
+}
+#homepage div.sdileni .fb-share-button {
+    margin-bottom: 15px;
 }
