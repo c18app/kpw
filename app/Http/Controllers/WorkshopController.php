@@ -38,11 +38,20 @@ class WorkshopController extends Controller
                 ->bcc('mnosavcov@gmail.com', 'Michal Nosavcov')
                 ->send(new WorkshopConfirm($kurz));
         } catch (\Exception $e) {
-            die($e->getMessage());
-            return redirect()->route('homepage')->with('error', 'Děkuji za Vaši registraci. Registrace proběhla úspěšně, ale potvrzovací email se nepodařilo odeslat! Budu Vás co nejdříve kontaktovat.');
+//            die($e->getMessage());
+            return [
+                'status' => 'error',
+                'message' => 'Děkuji za Vaši registraci. Registrace proběhla úspěšně, ale potvrzovací email se nepodařilo odeslat! Budu Vás co nejdříve kontaktovat.'
+            ];
+//            return redirect()->route('homepage')->with('error', 'Děkuji za Vaši registraci. Registrace proběhla úspěšně, ale potvrzovací email se nepodařilo odeslat! Budu Vás co nejdříve kontaktovat.');
         }
 
-        return redirect()->route('homepage')->with('confirm', 'Děkuji za Vaši registraci, Na Váš email byla odeslána zpráva s potvrzením. V případě jakýchkoli dotazů se na mě prosím obraťte.');
+        return [
+            'status' => 'ok',
+            'message' => 'Děkuji za Vaši registraci, Na Váš email byla odeslána zpráva s potvrzením. V případě jakýchkoli dotazů se na mě prosím obraťte.'
+        ];
+
+//        return redirect()->route('homepage')->with('confirm', 'Děkuji za Vaši registraci, Na Váš email byla odeslána zpráva s potvrzením. V případě jakýchkoli dotazů se na mě prosím obraťte.');
     }
 
     public function newsletter(Request $request) {

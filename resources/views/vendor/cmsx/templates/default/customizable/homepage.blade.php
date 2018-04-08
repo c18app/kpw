@@ -155,6 +155,16 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
             <div class="col-xs-12">
                 <div class="title">Termíny<br>kurzů programování</div>
                 <div class="forms">
+                    <div class="form-message" id="form-success" style="display: none">
+                        <div class="col">
+                            <p class="alert alert-success"></p>
+                        </div>
+                    </div>
+                    <div class="form-message" id="form-error" style="display: none">
+                        <div class="col">
+                            <p class="alert alert-danger"></p>
+                        </div>
+                    </div>
                     @forelse($terms as $term)
                     <div class="form-wrap">
                         <div class="form-text">
@@ -170,7 +180,7 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
                         </div>
 
                         <div class="form-form" id="form-termin-{{ $term->id }}">
-                            <form action="{{ route('workshop.register') }}" method="post">
+                            <form action="{{ route('workshop.register') }}" method="post" class="form-koupit-kurz">
                                 {{ csrf_field() }}
                                 <input type="hidden" name="workshop_term_id" value="{{ $term->id }}">
                                 <div class="col-xs-4">
@@ -257,5 +267,58 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
                 }, 800);
             });
         });
+
+        $('form.form-koupit-kurz').submit(function(event) {
+            loadbegin()
+            event.preventDefault();
+            var url = $(this).attr('action')
+            var data = $(this).serialize();
+            var that = $(this)
+            $.post(url, data, function (data) {
+                that.find('button,input').attr('disabled', true);
+                if(data.status == 'ok') {
+                    $('#form-error').slideUp();
+                    $('#form-success .alert-success').text(data.message);
+                    $('#form-success').slideDown();
+                } else {
+                    $('#form-error .alert-danger').text(data.message).slideDown();
+                    $('#form-error').slideDownd();
+                    $('#form-success').slideUp();
+                }
+            }, 'json')
+                .always(function () {
+                    loadend()
+                })
+                .fail(function () {
+                    $('#form-error .alert-danger').text('Všechna pole ve formuláři jsou povinná').slideDown();
+                    $('#form-error').slideDown();
+                    $('#form-success').slideUp();
+                })
+        })
+
+        function loadbegin() {
+            var pw = ($(window).width()-80)/2;
+            var ph = ($(window).height()-80)/3;
+            var bg = $('<div>');
+            bg.css('position', 'fixed')
+                .css('top', 0)
+                .css('left', 0)
+                .css('bottom', 0)
+                .css('right', 0)
+                .css('opacity', 0.5)
+                .css('backgroundColor', '#fff')
+                .addClass('loader-wrap');
+            var loader = $('<div>');
+            loader.addClass('loader').css('left', pw).css('top', ph);
+
+            $('body').append(bg);
+            $('body').append(loader)
+        }
+
+        function loadend() {
+            $('.loader-wrap').remove();
+            $('.loader').remove();
+        }
+
     </script>
 @endsection
