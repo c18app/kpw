@@ -72,17 +72,28 @@ body {
 #main-content {
     min-height: 750px;
 }
+#bottom-content {
+    background-color: #273043;
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
 #bottom-content .container {
     height: auto;
-    min-height: 50px;
-    line-height: 50px;
-}
-
-#bottom-content .container ul {
-    list-style-type: none;
-    padding-left: 0;
+    color: #59647c;
+    font-size: 12px;
+    font-family: "IBMPlexSans";
     line-height: 150%;
-    margin-top: 10px;
+}
+#bottom-content .container a {
+    color: #59647c;
+}
+#bottom-content .container .white {
+    color: #fff;
+}
+#bottom-content .container .fb {
+    padding-right: 50px;
+    background: transparent url("img/fbico.png") 100% 2px no-repeat;
 }
 
 .btn-red {
@@ -204,7 +215,7 @@ body {
     width: 216px;
     height: 216px;
     padding: 18px;
-    background-color: #fff;
+    /*background-color: #fff;*/
     margin-right: 35px;
     margin-bottom: 35px;
     float: left;

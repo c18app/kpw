@@ -1,13 +1,7 @@
-<hr>
-<div class="container">
-    <ul>
-        @foreach(\C18app\Cmsx\Models\Page::whereHas('tags', function ($query) {$query->where('title', 'bottommenu');})->orderBy('order', 'asc')->orderby('id', 'desc')->get() as $page)
-            <li class="item"><a href="{{ $page->getUrl() }}">{{ $page->title }}</a></li>
-        @endforeach
-    </ul>
-
-
-    <div class="row text-center">
-        &copy; {{ config('cmsx.app.name') }} {{ date('Y') }}
+<div class="container-fluid">
+    <div class="container">
+        <div class="col-xs-6">Provozovatel webu: Michal Nosavcov, Nad Babím dolem 401, 250 64 Měšice<br>
+            tel: 603&nbsp;323&nbsp;878, email: <a href="mailto:michal@programovaniwebu.cz">michal@programovaniwebu.cz</a>, IČ: 64845915 | <a href="{{ \C18app\Cmsx\Models\Page::findOrFail(18)->getUrl() }}" class="white">Ochrana osobních údajů</a></div>
+        <div class="col-xs-6 text-right white fb">Další tipy také<br>na facebooku</div>
     </div>
 </div>
