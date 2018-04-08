@@ -11,7 +11,11 @@ Kupeckého 576<br>
 <br>
 platbu prosím zašlete na č.ú.: 2301045287/2010<br>
 VS: vaše telefonní číslo<br>
+@if(in_array($kurz->id, [3,4]))
+částka: 2.290,- Kč<br>
+@else
 částka: 2.790,- Kč<br>
+@endif
 <br>
 Děkuji,<br>
 Michal Nosavcov<br>

@@ -154,6 +154,7 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
         <div class="row">
             <div class="col-xs-12">
                 <div class="title">Termíny<br>kurzů programování</div>
+                <div style="color: #fff; background-color: #ee4445; font-family: 'IBMPlexSans'; font-size: 22px; padding: 5px 20px; border-radius: 3px; margin-bottom: 15px;">POZOR!!! na dubnové termíny sleva 500Kč.</div>
                 <div class="forms">
                     <div class="form-message" id="form-success" style="display: none">
                         <div class="col">
@@ -171,7 +172,13 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
                             <div class="col-1 col-xs-2">Základy<br>programování</div>
                             <div class="col-2x col-xs-2 text">{{ \Carbon\Carbon::parse($term->beginning)->format('d.m.Y') }}<br>(Od {{ \Carbon\Carbon::parse($term->beginning)->format('H') }} do {{  \Carbon\Carbon::parse($term->finish)->format('H') }} hod)</div>
                             <div class="col-2x col-xs-3 text">ZŠ a SŠ Kupeckého 576<br>Praha 4</div>
-                            <div class="col-2x col-xs-2 text" style="margin-top: 30px;">Cena: <span class="cena">2&nbsp;790 Kč</span></div>
+                            <div class="col-2x col-xs-2 text" style="margin-top: 30px;">Cena: <span class="cena">
+                                    @if(in_array($term->id, [3,4]))
+                                        <span style="text-decoration: line-through; font-family: 'IBMPlexSans'">2&nbsp;790 Kč</span><br>2&nbsp;290 Kč
+                                    @else
+                                    2&nbsp;790 Kč
+                                    @endif
+                                </span></div>
                             <div class="col-2x col-xs-3 text text-right" style="margin-top: 9px;">
                                 <button type="button" class="btn-red btn-koupit" onclick="$('.form-form').not('#form-termin-{{ $term->id }}').slideUp(); $('.btn-koupit').not('#form-koupit-{{ $term->id }}').fadeIn(); $('#form-termin-{{ $term->id }}').slideDown(); $('#form-close-{{ $term->id }}').fadeIn(); $('.close-form').not('#form-close-{{ $term->id }}').fadeOut(); $(this).fadeOut();" id="form-koupit-{{ $term->id }}">Koupit kurz</button>
                                 <a href="javascript:void(0);" class="close-form btn-red" onclick="$('.form-form').slideUp(); $('.btn-koupit').fadeIn(); $('.close-form').fadeOut();" id="form-close-{{ $term->id }}">x</a>
