@@ -5,6 +5,7 @@
 <meta property="og:title"         content="{{ config('cmsx.app.name') }}" />
 <meta property="og:description"   content="Kurzy a informace o programování webu" />
 <meta property="og:image"         content="{{ url('img/code.jpg') }}" />
+<meta property="fb:app_id"        content="228982927679742" />
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115776779-1"></script>
