@@ -228,9 +228,9 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
                         nabyté materiály.
                     </div>
                     <div class="row">
-                        <form action="">
+                        <form action="{{ route('workshop.newsletter') }}" method="post">
                             {{ csrf_field() }}
-                            <div class="col-xs-7"><input type="email" name="subscribe-email" value=""
+                            <div class="col-xs-7"><input type="email" name="email" value=""
                                                          placeholder="Váš e-mail"></div>
                             <div class="col-xs-5">
                                 <button type="submit" class="btn-red">Vložit e-mail</button>

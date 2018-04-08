@@ -13,3 +13,4 @@
 
 
 Route::post('/terminy', 'WorkshopController@register')->name('workshop.register');
+Route::post('/newsletter', 'WorkshopController@newsletter')->name('workshop.newsletter');

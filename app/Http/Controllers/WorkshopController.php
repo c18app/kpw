@@ -9,6 +9,7 @@ use App\WorkshopTerm;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 use App\Mail\WorkshopConfirm;
+use App\Mailing;
 
 class WorkshopController extends Controller
 {
@@ -42,5 +43,20 @@ class WorkshopController extends Controller
         }
 
         return redirect()->route('homepage')->with('confirm', 'Děkuji za Vaši registraci, Na Váš email byla odeslána zpráva s potvrzením. V případě jakýchkoli dotazů se na mě prosím obraťte.');
+    }
+
+    public function newsletter(Request $request) {
+        $validatedData = $request->validate([
+            'email' => 'required|email',
+        ], [
+            'email.required' => 'pole "Email" je povinné',
+            'email.email' => 'pole "Email" musí mít validní formát pro email',
+        ]);
+
+        Mailing::create($validatedData);
+
+        return redirect()->route('homepage')->with('confirm', 'Děkuji za Váš zájem o zasílání tipů.');
+        var_dump($request->all());
+        die();
     }
 }
