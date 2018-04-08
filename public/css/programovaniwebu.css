@@ -389,6 +389,14 @@ ul.se-sipkama li.bez-sipky {
     margin-bottom: 80px;
 }
 
+#homepage div.terminy-kurzu .forms .form-wrap .text.text-right {
+    position: relative;
+}
+#homepage div.terminy-kurzu .forms .form-wrap .text.text-right button,
+#homepage div.terminy-kurzu .forms .form-wrap .text.text-right a {
+    position: absolute;
+    right: 0;
+}
 #homepage div.terminy-kurzu .forms .form-wrap {
     background-color: #f7f3db;
 }
@@ -426,6 +434,14 @@ ul.se-sipkama li.bez-sipky {
 }
 #homepage div.terminy-kurzu .forms .form-wrap a.ochrana {
     color: #ee4445;
+}
+#homepage div.terminy-kurzu .forms .form-wrap a.close-form {
+    font-family: "IBMPlexSans" !important;
+    font-size: 22px!important;
+    padding: 4px 12px!important;
+    height: 40px!important;
+    line-height: 22px!important;
+    display: none;
 }
 #homepage div.terminy-kurzu .forms .form-wrap .input-text {
     font-family: "IBMPlexSans-Bold";
