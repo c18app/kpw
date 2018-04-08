@@ -75,7 +75,7 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
                     </div>
 
                     <div class="content-bottom">
-                        Mám bohaté zkušenosti jako freelancer s prací ve velkých firmách jako: <a href="#">Economia, a.s</a> (ihned.cz, aktualne.cz), FORTUNA GAME a.s., CCS Česká společnost pro platební karty s.r.o., Patria Finance, a.s. Věřím, že jsem schopný, předat na semináři zajímavé a podnětné informace, které vám pomůžou udělat první krok.
+                        Mám bohaté zkušenosti jako freelancer s prací ve velkých firmách jako: <a href="http://economia.ihned.cz/" target="_blank">Economia, a.s</a> (<a href="https://ihned.cz/" target="_blank">ihned.cz</a>, <a href="https://aktualne.cz/" target="_blank">aktualne.cz</a>), <a href="https://www.ifortuna.cz/" target="_blank">FORTUNA GAME a.s.</a>, <a href="http://www.ccs.cz/" target="_blank">CCS Česká společnost pro platební karty s.r.o.</a>, <a href="https://www.patria.cz/" target="_blank">Patria Finance, a.s.</a> Věřím, že jsem schopný, předat na semináři zajímavé a podnětné informace, které vám pomůžou udělat první krok.
                     </div>
                 </div>
             </div>
