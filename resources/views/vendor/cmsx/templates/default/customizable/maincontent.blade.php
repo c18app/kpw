@@ -9,6 +9,7 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
     @include(Config('cmsx.app.template').'::frontend.menu.top')
+    <div class="clearfix"></div>
     <div class="container-fluid" id="main-content">
         <div class="row">
             <div class="col-lg-12">
