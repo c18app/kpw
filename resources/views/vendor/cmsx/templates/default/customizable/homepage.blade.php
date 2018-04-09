@@ -110,7 +110,7 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
     <div class="row info-o-kurzu">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6">
+                <div class="col-xs-12 col-sm-6 content-first">
                     <div class="title">Kde, jak dlouho,<br>za kolik?</div>
                     <div class="content">Kurz trvá celkem <span>8 hodin</span> a to od 10:00 do 18:00.<br>
                         Bude se konat pro min. <span>4</span> a max. <span>6 osob.</span><br>
@@ -169,19 +169,20 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
                     @forelse($terms as $term)
                     <div class="form-wrap">
                         <div class="form-text">
-                            <div class="col-1 col-xs-2">Základy<br>programování</div>
-                            <div class="col-2x col-xs-2 text">{{ \Carbon\Carbon::parse($term->beginning)->format('d.m.Y') }}<br>(Od {{ \Carbon\Carbon::parse($term->beginning)->format('H') }} do {{  \Carbon\Carbon::parse($term->finish)->format('H') }} hod)</div>
-                            <div class="col-2x col-xs-3 text">ZŠ a SŠ Kupeckého 576<br>Praha 4</div>
-                            <div class="col-2x col-xs-2 text" style="margin-top: 30px;">Cena: <span class="cena">
+                            <div class="col-1 col-sm-2 col-xs-12">Základy<br>programování</div>
+                            <div class="col-2x col-sm-2 col-xs-12 text">{{ \Carbon\Carbon::parse($term->beginning)->format('d.m.Y') }}<br>(Od {{ \Carbon\Carbon::parse($term->beginning)->format('H') }} do {{  \Carbon\Carbon::parse($term->finish)->format('H') }} hod)</div>
+                            <div class="col-2x col-sm-3 col-xs-12 text">ZŠ a SŠ Kupeckého 576<br>Praha 4</div>
+                            <div class="col-2x col-sm-2 col-xs-12 text" style="margin-top: 30px;">Cena: <span class="cena">
                                     @if(in_array($term->id, [3,4]))
                                         <span style="text-decoration: line-through; font-family: 'IBMPlexSans'">2&nbsp;790 Kč</span><br>2&nbsp;290 Kč
                                     @else
                                     2&nbsp;790 Kč
                                     @endif
                                 </span></div>
-                            <div class="col-2x col-xs-3 text text-right" style="margin-top: 9px;">
+                            <div class="col-2x col-sm-3 col-xs-12 text text-right" style="margin-top: 9px;">
                                 <button type="button" class="btn-red btn-koupit" onclick="$('.form-form').not('#form-termin-{{ $term->id }}').slideUp(); $('.btn-koupit').not('#form-koupit-{{ $term->id }}').fadeIn(); $('#form-termin-{{ $term->id }}').slideDown(); $('#form-close-{{ $term->id }}').fadeIn(); $('.close-form').not('#form-close-{{ $term->id }}').fadeOut(); $(this).fadeOut();" id="form-koupit-{{ $term->id }}">Koupit kurz</button>
                                 <a href="javascript:void(0);" class="close-form btn-red" onclick="$('.form-form').slideUp(); $('.btn-koupit').fadeIn(); $('.close-form').fadeOut();" id="form-close-{{ $term->id }}">x</a>
+                                <div class="clearfix"></div>
                             </div>
                             <div class="clearfix"></div>
                         </div>
@@ -190,21 +191,21 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
                             <form action="{{ route('workshop.register') }}" method="post" class="form-koupit-kurz">
                                 {{ csrf_field() }}
                                 <input type="hidden" name="workshop_term_id" value="{{ $term->id }}">
-                                <div class="col-xs-4">
+                                <div class="col-sm-4 col-xs-12">
                                 <div class="form-group">
                                     <label class="red">Jméno a příjmení</label>
                                     <input type="text" name="name" class="form-control input-text" value="{{ old('name') }}">
                                 </div>
                                 </div>
 
-                                <div class="col-xs-3">
+                                <div class="col-sm-3 col-xs-12">
                                 <div class="form-group">
                                     <label class="red">Váš e-mail</label>
                                     <input type="text" name="email" class="form-control input-text" value="{{ old('email') }}">
                                 </div>
                                 </div>
 
-                                <div class="col-xs-3">
+                                <div class="col-sm-3 col-xs-12">
                                 <div class="form-group">
                                     <label class="red">Telefon na vás</label>
                                     <input type="text" name="phone" class="form-control input-text" value="{{ old('phone') }}">

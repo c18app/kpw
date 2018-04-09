@@ -1,4 +1,4 @@
-<link href="/css/programovaniwebu.css?v=20180409006" rel="stylesheet">
+<link href="/css/programovaniwebu.css?v=20180409007" rel="stylesheet">
 <link href="/fonts/ibm-plex/stylesheet.css" rel="stylesheet">
 <meta property="og:url"           content="{{ url()->current() }}" />
 <meta property="og:type"          content="website" />
