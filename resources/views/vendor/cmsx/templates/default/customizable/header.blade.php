@@ -1,5 +1,5 @@
-<link href="/css/programovaniwebu.css" rel="stylesheet">
-<link href="/fonts/ibm-plex/stylesheet.css?v=20180409003" rel="stylesheet">
+<link href="/css/programovaniwebu.css?v=20180409004" rel="stylesheet">
+<link href="/fonts/ibm-plex/stylesheet.css" rel="stylesheet">
 <meta property="og:url"           content="{{ url()->current() }}" />
 <meta property="og:type"          content="website" />
 <meta property="og:title"         content="{{ config('cmsx.app.name') }}" />
