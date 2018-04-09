@@ -41,12 +41,6 @@ body {
     margin-left: 4px;
 }
 
-@media screen and (max-width: 400px) {
-    #top-content a.navbar-brand .title {
-        font-size: 20px;
-    }
-}
-
 #top-content .navbar-right li a {
     margin-top: 23px;
     font-family: "IBMPlexSans";
@@ -509,4 +503,16 @@ ul.se-sipkama li.bez-sipky {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 768px) {
+    #top-content a.navbar-brand .title {
+        font-size: 20px;
+    }
+    #homepage .infopruh .line-1 {
+        font-size: 30px;
+    }
+    #homepage .infopruh .line-2 {
+        font-size: 26px;
+    }
 }
