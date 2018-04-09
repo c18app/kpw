@@ -228,6 +228,7 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
                             </form>
                             <div class="clearfix"></div>
                         </div>
+                        <div class="clearfix"></div>
                     </div>
                     @empty
                         nejsou žádné volné terminy

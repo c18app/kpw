@@ -524,6 +524,9 @@ ul.se-sipkama li.bez-sipky {
     #homepage .content-first {
         margin-bottom: 25px;
     }
+    #homepage div.terminy-kurzu .forms .form-wrap .text.text-right button, #homepage div.terminy-kurzu .forms .form-wrap .text.text-right a {
+        position: static;
+    }
 }
 @media screen and (max-width: 991px) {
     #homepage div.cena-kurzu .content {
