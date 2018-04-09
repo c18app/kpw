@@ -24,17 +24,17 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
 
     <div class="container questions">
         <div class="row">
-            <div class="col-xs-4 text-center">
+            <div class="col-xs-12 col-sm-4 text-center">
                 <div class="question-mark">?</div>
                 <div class="line-1">CSS, Php, MySQL<br>jsou pro vás sprostá slova?</div>
                 <div class="line-2">chcete vědět, co znamenají tajemné zápisy jako by byly z vesmíru?</div>
             </div>
-            <div class="col-xs-4 text-center">
+            <div class="col-xs-12 col-sm-4  text-center">
                 <div class="question-mark">?</div>
                 <div class="line-1">Nevíte, jak začít<br>a váháte?</div>
                 <div class="line-2">chcete se naučit programovat web&nbsp;a zatím jste nevěděli odkud se do toho pustit?</div>
             </div>
-            <div class="col-xs-4 text-center">
+            <div class="col-xs-12 col-sm-4  text-center">
                 <div class="question-mark">?</div>
                 <div class="line-1">Jste začátečníci, nebo<br>už se trochu vyznáte?</div>
                 <div class="line-2">láká vás vyzkoušet si naprogramovat vlastní web úplně od začátku, nebo chcete pokročit dál?</div>
@@ -45,7 +45,7 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
     <div class="row prihlastese-omne">
         <div class="container">
             <div class="row">
-                <div class="col-xs-6">
+                <div class="col-xs-12 col-sm-6">
                     <div class="title">Přihlaste se na kurz</div>
                     <div class="subtitle">a naučte se základy,<br>zvládneme to za 8 hodin</div>
                     <ul class="se-sipkama">
@@ -63,7 +63,7 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
                         </li>
                     </ul>
                 </div>
-                <div class="col-xs-5 col-xs-offset-1">
+                <div class="col-xs-12 col-sm-5 col-sm-offset-1">
                     <div class="title">Něco o mně</div>
                     <div class="subtitle">pomůžu vám<br>udělat první krok</div>
                     <div class="content">
@@ -239,7 +239,7 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
     <div class="row sdileni">
         <div class="container">
             <div class="row">
-                <div class="col-xs-7">
+                <div class="col-sm-7 col-xs-12">
                     <div class="title">Cenné zkušenosti<br>do vaší schránky</div>
                     <div class="description">Nechte mi prosím e-mail,<br>na který vám občas pošlu zajímavé tipy a pracně
                         nabyté materiály.
@@ -255,7 +255,7 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
                         </form>
                     </div>
                 </div>
-                <div class="col-xs-5">
+                <div class="col-sm-5 col-xs-12">
                     <div class="title">Sdílejte stránku<br>s přáteli,&nbsp;&nbsp;díky!</div>
                     <div class="fb-share-button" data-href="{{ url()->current() }}" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(url()->current()) }}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Sdílet</a></div>
                     <div class="clearfix"></div>
