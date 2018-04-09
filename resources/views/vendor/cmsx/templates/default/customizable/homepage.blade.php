@@ -289,10 +289,18 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
                     $('#form-error').slideUp();
                     $('#form-success .alert-success').text(data.message);
                     $('#form-success').slideDown();
+
+                    $('html, body').animate({
+                        scrollTop: $('#form-success').offset().top
+                    }, 800);
                 } else {
                     $('#form-error .alert-danger').text(data.message).slideDown();
                     $('#form-error').slideDownd();
                     $('#form-success').slideUp();
+
+                    $('html, body').animate({
+                        scrollTop: $('#form-error').offset().top
+                    }, 800);
                 }
             }, 'json')
                 .always(function () {
@@ -302,6 +310,10 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
                     $('#form-error .alert-danger').text('Všechna pole ve formuláři jsou povinná').slideDown();
                     $('#form-error').slideDown();
                     $('#form-success').slideUp();
+
+                    $('html, body').animate({
+                        scrollTop: $('#form-error').offset().top
+                    }, 800);
                 })
         })
 
