@@ -85,7 +85,7 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
     <div class="row co-muzete-ocekavat">
         <div class="container">
             <div class="row">
-                <div class="col-xs-7">
+                <div class="col-sm-7 col-xs-12">
                     <div class="title">Co můžete očekávat</div>
                     <div class="subtitle">získáte zajímavé a podnětné informace</div>
                     <ul class="se-sipkama se-sipkama-white">
@@ -96,7 +96,7 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
                         <li>Dostanete rady, odkazy a přístupy na materiály, které vám při učení pomůžou.</li>
                     </ul>
                 </div>
-                <div class="col-xs-4 col-xs-offset-1">
+                <div class="col-xs-4 col-xs-offset-1 hidden-xs">
                     <div class="content">
                         <img src="/img/pic01.png" class="img-1">
                         <img src="/img/pic02.png" class="img-2">
