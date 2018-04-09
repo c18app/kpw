@@ -1,8 +1,5 @@
 <li class="item">
-    <a href="{{ route('homepage') }}">Kurz</a>
-</li>
-<li class="item">
-    <a href="{{ route('workshop.terms') }}">Termíny kurzů</a>
+    <a href="{{ route('homepage') }}">Úvod</a>
 </li>
 <li><hr></li>
 @foreach(\C18app\Cmsx\Models\Page::whereHas('tags', function ($query) {$query->where('title', 'leftmenu');})->orderBy('order', 'asc')->orderby('id', 'desc')->get() as $page)
