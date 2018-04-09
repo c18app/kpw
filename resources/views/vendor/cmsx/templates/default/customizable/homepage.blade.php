@@ -110,7 +110,7 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
     <div class="row info-o-kurzu">
         <div class="container">
             <div class="row">
-                <div class="col-xs-6">
+                <div class="col-xs-12 col-sm-6">
                     <div class="title">Kde, jak dlouho,<br>za kolik?</div>
                     <div class="content">Kurz trvá celkem <span>8 hodin</span> a to od 10:00 do 18:00.<br>
                         Bude se konat pro min. <span>4</span> a max. <span>6 osob.</span><br>
@@ -127,7 +127,7 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
                     </div>
 
                 </div>
-                <div class="col-xs-6">
+                <div class="col-xs-12 col-sm-6">
                     <div class="title">Co<br>si vzít sebou?</div>
                     <ul class="se-sipkama">
                         <li>Vezměte si s sebou notebook, není to podmínka, ale pak si kurz tolik neužijete, a vše budete muset zkoušet až sami doma.</li>
