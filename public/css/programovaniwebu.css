@@ -516,11 +516,28 @@ ul.se-sipkama li.bez-sipky {
         font-size: 26px;
     }
     #homepage div.prihlastese-omne .content span {
-        position: static;
+
         margin-bottom: 25px;
         display: inline-block;
     }
     #homepage .content-first {
         margin-bottom: 25px;
+    }
+}
+@media screen and (max-width: 991px) {
+    #homepage div.cena-kurzu .content {
+        line-height: 100%;
+    }
+    #homepage div.cena-kurzu .content .description {
+        line-height: 150%;
+        margin-top: 25px;
+        /*float: left;*/
+    }
+    #homepage div.cena-kurzu .content span.btn-center {
+        position: static;
+        line-height: 100%;
+        float: right;
+        margin-top: 35px;
+        display: inline-block;
     }
 }

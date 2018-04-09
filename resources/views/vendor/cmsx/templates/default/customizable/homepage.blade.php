@@ -143,8 +143,8 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 content">
-                    <div class="description"> Cena za kurz pro začátečníky je celkem <span class="cena">2&nbsp;790</span> Kč</div>
-                    <span class="btn-center"><a href="#koupit-kurz" class="btn-white scroll-btn"><span class="sipcicka"></span>Volné termíny</a></span>
+                    <div class="description col-xs-12 col-md-9"> Cena za kurz pro začátečníky je celkem <span class="cena">2&nbsp;790</span> Kč</div>
+                    <span class="btn-center col-xs-12 col-md-3"><a href="#koupit-kurz" class="btn-white scroll-btn"><span class="sipcicka"></span>Volné termíny</a></span>
                 </div>
             </div>
         </div>
