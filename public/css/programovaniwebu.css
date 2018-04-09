@@ -515,8 +515,9 @@ ul.se-sipkama li.bez-sipky {
     #homepage .infopruh .line-2 {
         font-size: 26px;
     }
-    #homepage div.prihlastese-omne .content span {
-
+    #homepage div.prihlastese-omne .content span
+    {
+        position: static;
         margin-bottom: 25px;
         display: inline-block;
     }
@@ -533,7 +534,7 @@ ul.se-sipkama li.bez-sipky {
         margin-top: 25px;
         /*float: left;*/
     }
-    #homepage div.cena-kurzu .content span.btn-center {
+    #homvepage div.cena-kurzu .content span.btn-center {
         position: static;
         line-height: 100%;
         float: right;
