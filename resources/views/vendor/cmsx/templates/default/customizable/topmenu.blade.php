@@ -32,7 +32,7 @@
                     {{--<a class="nav-link" href="javascript:void(0);">Články</a>--}}
                 {{--</li>--}}
                 <li class="nav-item">
-                    <a class="nav-link btn-red scroll-btn col-xs-10 col-xs-offset-1 col-sm-12" href="{{ route('homepage') }}#koupit-kurz">Koupit kurz</a>
+                    <a class="nav-link btn-red scroll-btn col-xs-10 col-xs-offset-1 col-sm-12" data-href="#koupit-kurz" href="{{ route('homepage') }}#koupit-kurz">Koupit kurz</a>
                 </li>
                 @auth
                     <li class="nav-item">

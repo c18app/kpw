@@ -271,8 +271,9 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
         $(document).ready(function (){
             $(".scroll-btn").click(function (event){
                 event.preventDefault();
+                var id = $(this).data('href') || $(this).attr('href');
                 $('html, body').animate({
-                    scrollTop: $($(this).attr('href')).offset().top
+                    scrollTop: $(id).offset().top
                 }, 800);
             });
         });
