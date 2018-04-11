@@ -14,3 +14,6 @@
 
 Route::post('/terminy', 'WorkshopController@register')->name('workshop.register');
 Route::post('/newsletter', 'WorkshopController@newsletter')->name('workshop.newsletter');
+Route::get('/affiliate', 'AffiliateController@index')->name('affiliate.index');
+Route::post('/affiliate', 'AffiliateController@register')->name('affiliate.register');
+Route::get('/dashboard', 'IndexController@dashboard')->name('index.dashboard');
