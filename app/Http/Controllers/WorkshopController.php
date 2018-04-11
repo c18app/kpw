@@ -29,6 +29,7 @@ class WorkshopController extends Controller
             'confirm.accepted' => 'musíte souhlasit se spracováním osobních údajů',
         ]);
 
+        $validatedData['affiliate_code'] = \Cookie::get('a');
         WorkshopParticipant::create($validatedData);
 
         try {

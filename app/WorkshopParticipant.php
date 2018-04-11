@@ -11,5 +11,6 @@ class WorkshopParticipant extends Model
         'email',
         'phone',
         'workshop_term_id',
+        'affiliate_code'
     ];
 }

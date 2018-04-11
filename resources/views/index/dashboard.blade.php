@@ -10,7 +10,8 @@
             <td style="padding-right: 25px;">{{ $ucastnik->created_at->format('d.m.Y H:i') }}</td>
             <td style="padding-right: 25px;">{{ $ucastnik->name }}</td>
             <td style="padding-right: 25px;">{{ $ucastnik->email }}</td>
-            <td>{{ $ucastnik->phone }}</td>
+            <td style="padding-right: 25px;">{{ $ucastnik->phone }}</td>
+            <td>{{ $ucastnik->affiliate_code }}</td>
         </tr>
     @endforeach
     </table>

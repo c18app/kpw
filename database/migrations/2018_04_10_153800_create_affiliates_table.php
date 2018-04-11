@@ -16,7 +16,7 @@ class CreateAffiliatesTable extends Migration
         Schema::create('affiliates', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->string('code', 10)->unique();
+            $table->string('code', 8)->unique();
             $table->string('email', 255)->unique();
             $table->string('password', 255);
         });
