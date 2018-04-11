@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Affiliate;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
-use App\Mail\WorkshopConfirm;
+use App\Mail\AffiliateConfirm;
 use App\Mailing;
 
 class AffiliateController extends Controller
@@ -35,14 +35,23 @@ class AffiliateController extends Controller
         $i = 0;
         do {
             $code = sha1(uniqid(microtime(true), true));
-            $validatedData['code'] = substr($code, 0, 10);
+            $validatedData['code'] = substr($code, 0, 8);
         } while (Affiliate::where('code', $validatedData['code'])->count());
 
-        $pass = substr($code, -8);
+        $pass = substr($code, -10);
         $validatedData['password'] = bcrypt($pass);
 
-        Affiliate::create($validatedData);
+        $affiliate = Affiliate::create($validatedData);
 
-        return redirect()->route('affiliate.index')->with('confirm', 'Děkuji za Vaši registraci.');
+        try {
+            Mail::to($validatedData['email'])
+                ->bcc('mnosavcov@gmail.com', 'Michal Nosavcov')
+                ->send(new AffiliateConfirm($affiliate, $pass));
+        } catch (\Exception $e) {
+//            die($e->getMessage());
+            return redirect()->route('affiliate.index')->with('error', 'Děkuji za Vaši registraci. Registrace proběhla úspěšně, ale nepodařilo se odeslat email s potvrzením. Budu Vás co nejdříve kontaktovat.');
+        }
+
+        return redirect()->route('affiliate.index')->with('confirm', 'Děkuji za Vaši registraci. na Váš email byla odeslána potvrzovací zpráva.');
     }
 }
