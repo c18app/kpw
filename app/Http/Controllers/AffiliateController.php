@@ -17,6 +17,11 @@ class AffiliateController extends Controller
         return view('affiliate.index');
     }
 
+    public function account()
+    {
+        return view('affiliate.account');
+    }
+
     public function register(Request $request)
     {
         $validatedData = $request->validate([
