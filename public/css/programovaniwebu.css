@@ -75,8 +75,10 @@ body {
 #bottom-content {
     background-color: #273043;
     height: auto;
-    padding-top: 25px;
     padding-bottom: 25px;
+}
+#bottom-content .container-fluid.paticka {
+    padding-top: 25px;
 }
 #bottom-content .container {
     height: auto;
@@ -452,29 +454,29 @@ ul.se-sipkama li.bez-sipky {
     height: 45px;
 }
 
-#homepage div.sdileni {
+.frontend div.sdileni {
     padding-top: 75px;
     padding-bottom: 115px;
     background-color: #f7f3db;
 }
 
-#homepage div.sdileni .title {
+.frontend div.sdileni .title {
     font-family: "IBMPlexSans-Bold";
     color: #273043;
     font-size: 45px;
     line-height: 125%;
     margin-bottom: 55px;
 }
-#homepage div.sdileni .description {
+.frontend div.sdileni .description {
     color: #0a0f0d;
     font-size: 17px;
     line-height: 125%;
     margin-bottom: 25px;
 }
-#homepage div.sdileni form input::placeholder {
+.frontend div.sdileni form input::placeholder {
     color: #cbc9bd;
 }
-#homepage div.sdileni form input {
+.frontend div.sdileni form input {
     font-family: "IBMPlexSans-Light";
     color: #273043;
     font-size: 17px;
@@ -486,7 +488,7 @@ ul.se-sipkama li.bez-sipky {
     padding-right: 30px;
     border-radius: 3px;
 }
-#homepage div.sdileni .fb-share-button {
+.frontend div.sdileni .fb-share-button {
     margin-bottom: 15px;
 }
 
@@ -542,4 +544,63 @@ ul.se-sipkama li.bez-sipky {
         margin-top: 35px;
         display: inline-block;
     }
+}
+
+body#page {
+    font-family: "IBMPlexSans"!important;
+    color: #0a0f0d!important;
+    font-size: 17px!important;
+    line-height: 150%!important;
+}
+
+#page h1,
+#page h2,
+#page h3,
+#page h4,
+#page h5,
+#page h6 {
+    font-family: "IBMPlexSans-Bold";
+    color: #192243;
+}
+#page h1 {
+    font-size: 45px;
+}
+#page h2 {
+    font-size: 28px;
+}
+#page .infopruh {
+    height: 280px;
+    background: #171F3E url('img/infopruhclanek.png') 50% 0 no-repeat;
+    position: relative;
+}
+#page .content {
+    padding-top: 55px;
+}
+
+#page .content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+#page .content ul li {
+    padding-left: 30px;
+    background: transparent url('img/li.png') 0 9px no-repeat;
+}
+
+#page .content pre {
+    padding: 40px;
+    line-heignt: 200%;
+    background-color: #f7f3db;
+    border: none;
+    border-radius: 0;
+}
+
+.side-nav {
+    position: relative;
+    top: -50px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    background-color: #f9fafa;
+}
+.side-nav li a {
+    color: #ee4445;
 }

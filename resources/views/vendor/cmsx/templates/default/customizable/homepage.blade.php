@@ -70,7 +70,7 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
                         <div class="img-wrap">
                             <img src="/img/me.png">
                         </div>
-                        <span class="text-justify">O Programování se zajímám už od roku 1989. Od roku 2009 se profesionálně zabývám programováním webových stránek v PHP.</span>
+                        <span class="text-justify">O programování se zajímám už od roku 1989. Od roku 2009 se profesionálně zabývám programováním webových stránek v PHP.</span>
                         <div class="clearfix"></div>
                     </div>
 
@@ -154,7 +154,7 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
         <div class="row">
             <div class="col-xs-12">
                 <div class="title">Termíny<br>kurzů programování</div>
-                <div style="color: #fff; background-color: #ee4445; font-family: 'IBMPlexSans'; font-size: 22px; padding: 5px 20px; border-radius: 3px; margin-bottom: 15px;">POZOR!!! na dubnové termíny sleva 500Kč.</div>
+                {{--<div style="color: #fff; background-color: #ee4445; font-family: 'IBMPlexSans'; font-size: 22px; padding: 5px 20px; border-radius: 3px; margin-bottom: 15px;">POZOR!!! na dubnové termíny sleva 500Kč.</div>--}}
                 <div class="forms">
                     <div class="form-message" id="form-success" style="display: none">
                         <div class="col">
@@ -233,35 +233,6 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
                     @empty
                         nejsou žádné volné terminy
                     @endforelse
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row sdileni">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-7 col-xs-12">
-                    <div class="title">Cenné zkušenosti<br>do vaší schránky</div>
-                    <div class="description">Nechte mi prosím e-mail,<br>na který vám občas pošlu zajímavé tipy a pracně
-                        nabyté materiály.
-                    </div>
-                    <div class="row">
-                        <form action="{{ route('workshop.newsletter') }}" method="post">
-                            {{ csrf_field() }}
-                            <div class="col-sm-7 col-xs-12"><input type="email" name="email" value=""
-                                                         placeholder="Váš e-mail"></div>
-                            <div class="col-sm-5 col-xs-12">
-                                <button type="submit" class="btn-red">Vložit e-mail</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-sm-5 col-xs-12">
-                    <div class="title">Sdílejte stránku<br>s přáteli,&nbsp;&nbsp;díky!</div>
-                    <div class="fb-share-button" data-href="{{ url()->current() }}" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(url()->current()) }}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Sdílet</a></div>
-                    <div class="clearfix"></div>
-                    <div class="fb-page" data-href="https://www.facebook.com/kurzprogramovaniwebu/" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/kurzprogramovaniwebu/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/kurzprogramovaniwebu/">Kurz programování webu</a></blockquote></div>
                 </div>
             </div>
         </div>
