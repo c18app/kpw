@@ -20,7 +20,7 @@ class IndexController extends Controller
         $this->middleware([
             'auth',
             'C18app\Cmsx\Middleware\Admin'
-        ]);
+        ])->except(['articles']);
     }
 
     public function dashboard()
