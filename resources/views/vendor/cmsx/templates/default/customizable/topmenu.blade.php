@@ -25,14 +25,11 @@
             {{--</ul>--}}
 
             <ul class="nav navbar-nav navbar-right">
-                {{--<li class="nav-item{{ Request()->route()->named('homepage') ? ' active' : '' }}">--}}
-                    {{--<a class="nav-link" href="{{ route('homepage') }}">Úvod</a>--}}
-                {{--</li>--}}
-                {{--<li class="nav-item">--}}
-                    {{--<a class="nav-link" href="javascript:void(0);">Články</a>--}}
-                {{--</li>--}}
-                <li class="nav-item">
-                    <a class="nav-link btn-red scroll-btn col-xs-10 col-xs-offset-1 col-sm-12" data-href="#koupit-kurz" href="{{ route('homepage') }}#koupit-kurz">Koupit kurz</a>
+                <li class="nav-item{{ Request()->route()->named('homepage') ? ' active' : '' }}">
+                    <a class="nav-link" href="{{ route('homepage') }}">Úvod</a>
+                </li>
+                <li class="nav-item{{ Request()->route()->named('index.articles') ? ' active' : '' }}">
+                    <a class="nav-link" href="{{ route('index.articles') }}">Články</a>
                 </li>
                 @auth
                     <li class="nav-item">
@@ -42,13 +39,9 @@
                         <a class="nav-link" href="{{ route('admin.dashboard') }}"><span class="fas fa-cog"></span></a>
                     </li>
                 @endauth
-                @if(false)
-                    @guest
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">Login</a>
-                        </li>
-                    @endguest
-                @endif
+                <li class="nav-item nav-item-btn">
+                    <a class="nav-link btn-red scroll-btn col-xs-10 col-xs-offset-1 col-sm-12" data-href="#koupit-kurz" href="{{ route('homepage') }}#koupit-kurz">Koupit kurz</a>
+                </li>
             </ul>
         </div>
     </div>

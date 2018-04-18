@@ -42,12 +42,16 @@ body {
 }
 
 #top-content .navbar-right li a {
-    margin-top: 23px;
+    margin-top: 30px;
     font-family: "IBMPlexSans";
     font-size: 18px;
     color: #ee4445;
     text-transform: uppercase;
 }
+#top-content .navbar-right li.nav-item-btn a {
+    margin-top: 23px;
+}
+
 #top-content .navbar-right li.active a {
     font-family: "IBMPlexSans-Bold";
     background-color: transparent!important;
@@ -553,6 +557,10 @@ body#page {
     line-height: 150%!important;
 }
 
+#page a {
+    color: #192243;
+}
+
 #page h1,
 #page h2,
 #page h3,
@@ -585,7 +593,6 @@ body#page {
     padding-left: 30px;
     background: transparent url('img/li.png') 0 9px no-repeat;
 }
-
 #page .content pre {
     padding: 40px;
     line-heignt: 200%;
@@ -603,4 +610,19 @@ body#page {
 }
 .side-nav li a {
     color: #ee4445;
+}
+
+#page .content ul.articles li {
+    background: none;
+    padding-left: 0;
+    margin-bottom: 25px;
+}
+
+#page .content ul.articles li img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+#page .content ul.articles li div.box h2 {
+    margin-top: 0;
 }

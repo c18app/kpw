@@ -18,3 +18,4 @@ Route::get('/affiliate', 'AffiliateController@index')->name('affiliate.index');
 Route::post('/affiliate', 'AffiliateController@register')->name('affiliate.register');
 Route::get('/affiliate/account', 'AffiliateController@account')->name('affiliate.account');
 Route::get('/dashboard', 'IndexController@dashboard')->name('index.dashboard');
+Route::get('/clanky', 'IndexController@articles')->name('index.articles');
