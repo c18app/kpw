@@ -25,11 +25,11 @@
             {{--</ul>--}}
 
             <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item{{ Request()->route()->named('homepage') ? ' active' : '' }}">
-                    <a class="nav-link" href="{{ route('homepage') }}">Úvod</a>
+                <li class="nav-item{{ Request()->route()->named('index.kurzy') ? ' active' : '' }}">
+                    <a class="nav-link" href="{{ route('index.kurzy') }}">Kurzy</a>
                 </li>
-                <li class="nav-item{{ Request()->route()->named('index.articles') ? ' active' : '' }}">
-                    <a class="nav-link" href="{{ route('index.articles') }}">Články</a>
+                <li class="nav-item{{ Request()->route()->named('homepage') ? ' active' : '' }}">
+                    <a class="nav-link" href="{{ route('homepage') }}">Články</a>
                 </li>
                 @auth
                     <li class="nav-item">
@@ -40,7 +40,7 @@
                     </li>
                 @endauth
                 <li class="nav-item nav-item-btn">
-                    <a class="nav-link btn-red scroll-btn col-xs-10 col-xs-offset-1 col-sm-12" data-href="#koupit-kurz" href="{{ route('homepage') }}#koupit-kurz">Koupit kurz</a>
+                    <a class="nav-link btn-red scroll-btn col-xs-10 col-xs-offset-1 col-sm-12" data-href="#koupit-kurz" href="{{ route('index.kurzy') }}#koupit-kurz">Koupit kurz</a>
                 </li>
             </ul>
         </div>

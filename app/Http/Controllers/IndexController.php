@@ -11,7 +11,6 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 use App\Mail\WorkshopConfirm;
 use App\Mailing;
-use C18app\Cmsx\Models\Article;
 
 class IndexController extends Controller
 {
@@ -20,7 +19,7 @@ class IndexController extends Controller
         $this->middleware([
             'auth',
             'C18app\Cmsx\Middleware\Admin'
-        ])->except(['articles']);
+        ])->except(['kurzy']);
     }
 
     public function dashboard()
@@ -35,9 +34,8 @@ class IndexController extends Controller
         ]);
     }
 
-    public function articles()
+    public function kurzy()
     {
-        $clanky = Article::limit(10)->orderBy('id', 'desc')->get();
-        return view('index.articles', ['clanky' => $clanky]);
+        return view('index.kurzy');
     }
 }
