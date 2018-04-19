@@ -19,7 +19,7 @@ class IndexController extends Controller
         $this->middleware([
             'auth',
             'C18app\Cmsx\Middleware\Admin'
-        ])->except(['kurzy']);
+        ])->except(['kurzy', 'newsletter']);
     }
 
     public function dashboard()
@@ -37,5 +37,18 @@ class IndexController extends Controller
     public function kurzy()
     {
         return view('index.kurzy');
+    }
+
+    public function newsletter(Request $request) {
+        $validatedData = $request->validate([
+            'email' => 'required|email',
+        ], [
+            'email.required' => 'pole "Email" je povinné',
+            'email.email' => 'pole "Email" musí mít validní formát pro email',
+        ]);
+
+        Mailing::create($validatedData);
+
+        return back()->with('confirm', 'Děkuji za Váš zájem o zasílání tipů.');
     }
 }

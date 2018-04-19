@@ -7,7 +7,7 @@
                     nabyté materiály.
                 </div>
                 <div class="row">
-                    <form action="{{ route('workshop.newsletter') }}" method="post">
+                    <form action="{{ route('index.newsletter') }}" method="post">
                         {{ csrf_field() }}
                         <div class="col-sm-7 col-xs-12"><input type="email" name="email" value=""
                                                                placeholder="Váš e-mail"></div>

@@ -13,7 +13,7 @@
 
 
 Route::post('/terminy', 'WorkshopController@register')->name('workshop.register');
-Route::post('/newsletter', 'WorkshopController@newsletter')->name('workshop.newsletter');
+Route::post('/newsletter', 'IndexController@newsletter')->name('index.newsletter');
 Route::get('/affiliate', 'AffiliateController@index')->name('affiliate.index');
 Route::post('/affiliate', 'AffiliateController@register')->name('affiliate.register');
 Route::get('/affiliate/account', 'AffiliateController@account')->name('affiliate.account');

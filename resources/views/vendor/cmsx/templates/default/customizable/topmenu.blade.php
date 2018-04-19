@@ -46,3 +46,6 @@
         </div>
     </div>
 </nav>
+<div class="container">
+    @include(Config('cmsx.app.template').'::flash')
+</div>

@@ -5,9 +5,6 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
 ?>
 
 @section('content')
-    <div class="container">
-        @include(Config('cmsx.app.template').'::flash')
-    </div>
     <div class="row infopruh">
         <div class="container">
             <div class="line-1">&lt; Chcete se naučit</div>
