@@ -33,6 +33,7 @@
     <div class="container-fluid">
         <div class="row infopruh">
             <div class="container">
+                <h1 class="title">@section('content-title')Články<br>o programování</h1>@show
             </div>
         </div>
     </div>

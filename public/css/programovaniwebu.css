@@ -569,6 +569,7 @@ body#page {
 #page h6 {
     font-family: "IBMPlexSans-Bold";
     color: #192243;
+    line-height: 125%;
 }
 #page h1 {
     font-size: 45px;
@@ -625,4 +626,8 @@ body#page {
 
 #page .content ul.articles li div.box h2 {
     margin-top: 0;
+}
+#page .infopruh h1.title {
+    color: #ffffff;
+    margin-top: 55px;
 }
