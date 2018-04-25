@@ -44,6 +44,10 @@
             </div>
             <div class="col-lg-10 content">
                 @yield('content')
+
+                <div class="share">
+                    <div class="fb-like" data-href="{{ url()->current() }}" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
+                </div>
             </div>
         </div>
     </div>

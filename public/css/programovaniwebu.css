@@ -631,3 +631,19 @@ body#page {
     color: #ffffff;
     margin-top: 55px;
 }
+
+#page #main-content .content a {
+    color: #ee4445;
+    text-decoration: underline;
+}
+#page #main-content .content a:hover {
+    text-decoration: none;
+}
+#page #main-content .content {
+    text-align: justify;
+}
+#page #main-content .content .share {
+    text-align: right;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
