@@ -554,7 +554,7 @@ body#page {
     font-family: "IBMPlexSans"!important;
     color: #0a0f0d!important;
     font-size: 17px!important;
-    line-height: 150%!important;
+    line-height: 125%!important;
 }
 
 #page a {
@@ -571,6 +571,17 @@ body#page {
     color: #192243;
     line-height: 125%;
 }
+
+#page #main-content .content h1:first-child,
+#page #main-content .content h2:first-child,
+#page #main-content .content h3:first-child,
+#page #main-content .content h4:first-child,
+#page #main-content .content h5:first-child,
+#page #main-content .content h6:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
 #page h1 {
     font-size: 45px;
 }
@@ -583,7 +594,7 @@ body#page {
     position: relative;
 }
 #page .content {
-    padding-top: 55px;
+    padding-top: 25px;
 }
 
 #page .content ul {
@@ -646,4 +657,13 @@ body#page {
     text-align: right;
     margin-top: 50px;
     margin-bottom: 30px;
+}
+
+#page #main-content .content ul,
+#page #main-content .content ol,
+#page #main-content .content p {
+    margin-bottom: 25px;
+}
+#page #main-content .content p.empty-paragraph {
+    margin-bottom: 0px;
 }
