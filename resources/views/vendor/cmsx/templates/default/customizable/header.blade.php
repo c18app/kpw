@@ -1,10 +1,19 @@
+@if(isset($contentType) && $contentType == 'article' && file_exists(public_path('img/article/'.$contentData->id.'.png')))
+    @php
+        $og_image = url('img/article/'.$contentData->id.'.png');
+    @endphp
+@else
+    @php
+        $og_image = url('img/code.jpg');
+    @endphp
+@endif
 <link href="/css/programovaniwebu.css?v=20180425002" rel="stylesheet">
 <link href="/fonts/ibm-plex/stylesheet.css" rel="stylesheet">
 <meta property="og:url"           content="{{ url()->current() }}" />
 <meta property="og:type"          content="website" />
 <meta property="og:title"         content="{{ config('cmsx.app.name') }}@section('title')@show" />
 <meta property="og:description"   content="@section('content-title')Kurzy a informace o programování webu.@show" />
-<meta property="og:image"         content="{{ url('img/code.jpg') }}" />
+<meta property="og:image"         content="{{ $og_image }}" />
 <meta property="fb:app_id"        content="228982927679742" />
 <meta name="viewport" content="initial-scale=1">
 
