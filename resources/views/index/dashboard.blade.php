@@ -26,5 +26,15 @@
             </tr>
         @endforeach
     </table>
+
+    <h2>Newsletters ({{ $newsletters_count }})</h2>
+    <table>
+        @foreach($newsletters as $newsletter)
+            <tr>
+                <td style="padding-right: 25px;">{{ $newsletter->created_at->format('d.m.Y H:i') }}</td>
+                <td style="padding-right: 25px;">{{ $newsletter->email }}</td>
+            </tr>
+        @endforeach
+    </table>
 @endsection
 

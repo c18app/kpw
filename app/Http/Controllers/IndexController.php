@@ -26,11 +26,14 @@ class IndexController extends Controller
     {
         $ucastnici = WorkshopParticipant::orderBy('id', 'desc')->limit(10)->get();
         $affiliates = Affiliate::orderBy('id', 'desc')->limit(10)->get();
+        $newsletters = Mailing::orderBy('id', 'desc')->limit(10)->get();
         return view('index.dashboard', [
             'ucastnici' => $ucastnici,
             'affiliates' => $affiliates,
+            'newsletters' => $newsletters,
             'ucastnici_count' => WorkshopParticipant::count(),
             'affiliates_count' => Affiliate::count(),
+            'newsletters_count' => Mailing::count(),
         ]);
     }
 
