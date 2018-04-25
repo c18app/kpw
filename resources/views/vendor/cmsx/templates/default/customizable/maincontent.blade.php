@@ -33,7 +33,6 @@
     <div class="container-fluid">
         <div class="row infopruh">
             <div class="container">
-                <div>&nbsp;&nbsp;&nbsp;&nbsp;PROGRAMOVAT WEBY? <span class="regular">/&gt;</span>&nbsp;</div>
             </div>
         </div>
     </div>
