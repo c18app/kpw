@@ -5,7 +5,7 @@
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
             js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v2.12&appId=228982927679742&autoLogAppEvents=1';
+            js.src = 'https://connect.facebook.net/cs_CZ/sdk.js#xfbml=1&autoLogAppEvents=1&version=v3.0&appId=228982927679742';
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
     @include(Config('cmsx.app.template').'::frontend.menu.top')
@@ -26,7 +26,7 @@
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
             js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v2.12&appId=228982927679742&autoLogAppEvents=1';
+            js.src = 'https://connect.facebook.net/cs_CZ/sdk.js#xfbml=1&autoLogAppEvents=1&version=v3.0&appId=228982927679742';
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
     @include(Config('cmsx.app.template').'::frontend.menu.top')
