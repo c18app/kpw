@@ -1,9 +1,11 @@
 body {
     background-color: #ffffff;
 }
+
 .navbar-default {
     background-color: #ffffff;
 }
+
 #top-content .navbar {
     min-height: 108px;
     border: none;
@@ -20,12 +22,14 @@ body {
     position: relative;
     display: inline-block;
 }
-#top-content a.navbar-brand .cursor-box .arrow{
+
+#top-content a.navbar-brand .cursor-box .arrow {
     position: absolute;
     top: 0;
     left: 0;
 }
-#top-content a.navbar-brand .cursor-box .underscore{
+
+#top-content a.navbar-brand .cursor-box .underscore {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -34,6 +38,7 @@ body {
     animation-delay: 1s;
     animation-iteration-count: infinite;
 }
+
 #top-content a.navbar-brand .title {
     font-family: "IBMPlexSans-Medium";
     font-size: 28px;
@@ -48,26 +53,27 @@ body {
     color: #ee4445;
     text-transform: uppercase;
 }
+
 #top-content .navbar-right li.nav-item-btn a {
     margin-top: 23px;
 }
 
 #top-content .navbar-right li.active a {
     font-family: "IBMPlexSans-Bold";
-    background-color: transparent!important;
+    background-color: transparent !important;
 }
 
 /* The animation code */
 @keyframes example {
-    10%   {
+    10% {
         opacity: 1;
         filter: alpha(opacity=100)
     }
-    20%   {
+    20% {
         opacity: 0;
         filter: alpha(opacity=0)
     }
-    30%   {
+    30% {
         opacity: 1;
         filter: alpha(opacity=100)
     }
@@ -76,14 +82,17 @@ body {
 #main-content {
     min-height: 750px;
 }
+
 #bottom-content {
     background-color: #273043;
     height: auto;
     padding-bottom: 25px;
 }
+
 #bottom-content .container-fluid.paticka {
     padding-top: 25px;
 }
+
 #bottom-content .container {
     height: auto;
     color: #59647c;
@@ -91,12 +100,15 @@ body {
     font-family: "IBMPlexSans";
     line-height: 150%;
 }
+
 #bottom-content .container a {
     color: #59647c;
 }
+
 #bottom-content .container .white {
     color: #fff;
 }
+
 #bottom-content .container .fb {
     text-decoration: none;
     display: inline-block;
@@ -106,37 +118,39 @@ body {
 
 .btn-red {
     transition: color .25s, background-color .25s;
-    text-decoration: none!important;
-    font-family: "IBMPlexSans-Bold"!important;
-    padding: 18px 48px!important;
-    background-color: #ee4445!important;
-    color: #ffffff!important;
-    text-transform: none!important;
-    font-size: 18px!important;
-    border-radius: 3px!important;
-    border: 2px solid #ee4445!important;
-    line-height: 125%!important;
+    text-decoration: none !important;
+    font-family: "IBMPlexSans-Bold" !important;
+    padding: 18px 48px !important;
+    background-color: #ee4445 !important;
+    color: #ffffff !important;
+    text-transform: none !important;
+    font-size: 18px !important;
+    border-radius: 3px !important;
+    border: 2px solid #ee4445 !important;
+    line-height: 125% !important;
 }
+
 .btn-red:hover {
-    background-color: #ffffff!important;
-    color: #ee4445!important;
+    background-color: #ffffff !important;
+    color: #ee4445 !important;
 }
 
 .btn-white {
     transition: color .25s, background-color .25s;
-    text-decoration: none!important;
-    font-family: "IBMPlexSans-Bold"!important;
-    padding: 20px 70px!important;
-    background-color: #ffffff!important;
-    color: #ee4445!important;
-    text-transform: none!important;
-    font-size: 18px!important;
-    border-radius: 3px!important;
+    text-decoration: none !important;
+    font-family: "IBMPlexSans-Bold" !important;
+    padding: 20px 70px !important;
+    background-color: #ffffff !important;
+    color: #ee4445 !important;
+    text-transform: none !important;
+    font-size: 18px !important;
+    border-radius: 3px !important;
     line-height: 125% !important;
 }
+
 .btn-white:hover {
-    background-color: #ee4445!important;
-    color: #ffffff!important;
+    background-color: #ee4445 !important;
+    color: #ffffff !important;
 }
 
 #homepage .infopruh {
@@ -161,9 +175,11 @@ body {
     margin-top: -6px;
     line-height: 125%;
 }
+
 #homepage .infopruh .line-2 span.regular {
     font-family: "IBMPlexSans";
 }
+
 #homepage .infopruh .infotext {
     font-family: "IBMPlexSans";
     color: #fff;
@@ -171,19 +187,23 @@ body {
     line-height: 28px;
     margin-top: 25px;
 }
+
 #homepage .infopruh a {
     position: absolute;
     bottom: 70px;
 }
+
 #homepage div.questions {
     padding-top: 35px;
     padding-bottom: 40px;
 }
+
 #homepage div.question-mark {
     font-family: "IBMPlexSans-Light";
     color: #ee4445;
     font-size: 45px;
 }
+
 #homepage div.line-1 {
     font-family: "IBMPlexSans-Bold";
     color: #192243;
@@ -192,6 +212,7 @@ body {
     margin-top: -5px;
     margin-bottom: 10px;
 }
+
 #homepage div.line-2 {
     font-family: "IBMPlexSans";
     color: #0a0f0d;
@@ -204,11 +225,13 @@ body {
     padding-bottom: 150px;
     background-color: #f7f3db;
 }
+
 #homepage div.prihlastese-omne .title {
     font-family: "IBMPlexSans-Bold";
     font-size: 45px;
     color: #273043;
 }
+
 #homepage div.prihlastese-omne .subtitle {
     font-family: "IBMPlexSans-Light";
     font-size: 28px;
@@ -216,9 +239,11 @@ body {
     color: #273043;
     margin-bottom: 50px;
 }
+
 #homepage div.prihlastese-omne .content {
     position: relative;
 }
+
 #homepage div.prihlastese-omne .content .img-wrap {
     width: 216px;
     height: 216px;
@@ -228,10 +253,12 @@ body {
     margin-bottom: 35px;
     float: left;
 }
+
 #homepage div.prihlastese-omne .content img {
     width: 180px;
     height: 180px;
 }
+
 #homepage div.prihlastese-omne .content span {
     position: absolute;
     bottom: 35px;
@@ -240,21 +267,25 @@ body {
     font-size: 17px;
     line-height: 150%;
 }
+
 #homepage div.prihlastese-omne .content-bottom {
     font-family: "IBMPlexSans";
     color: #0a0f0d;
     font-size: 17px;
     line-height: 150%;
 }
+
 #homepage div.prihlastese-omne .content-bottom a {
     font-family: "IBMPlexSans-Bold";
     color: #273043;
     font-size: 19px;
 }
+
 ul.se-sipkama {
     padding-left: 0;
     list-style: none;
 }
+
 ul.se-sipkama li {
     font-family: "IBMPlexSans";
     padding-left: 50px;
@@ -264,30 +295,34 @@ ul.se-sipkama li {
     color: #0a0f0d;
     margin-bottom: 20px;
 }
+
 ul.se-sipkama-white li {
     color: #ffffff;
 }
+
 ul.se-sipkama li.bez-sipky {
     background-image: none;
 }
-
 
 #homepage div.co-muzete-ocekavat {
     padding-top: 70px;
     padding-bottom: 175px;
     background-color: #273043;
 }
+
 #homepage div.co-muzete-ocekavat .title {
     font-family: "IBMPlexSans-Bold";
     font-size: 45px;
     color: #f7f3db;
 }
+
 #homepage div.co-muzete-ocekavat .subtitle {
     font-family: "IBMPlexSans-Light";
     font-size: 28px;
     color: #f7f3db;
     margin-bottom: 85px;
 }
+
 #homepage div.co-muzete-ocekavat .content {
     position: relative;
 }
@@ -297,11 +332,13 @@ ul.se-sipkama li.bez-sipky {
     top: 50px;
     left: 0px;
 }
+
 #homepage div.co-muzete-ocekavat .content .img-2 {
     position: absolute;
     top: 150px;
     left: 150px;
 }
+
 #homepage div.co-muzete-ocekavat .content .img-3 {
     position: absolute;
     top: 300px;
@@ -313,6 +350,7 @@ ul.se-sipkama li.bez-sipky {
     padding-bottom: 115px;
     background-color: #f9fafa;
 }
+
 #homepage div.info-o-kurzu .title {
     font-family: "IBMPlexSans-Bold";
     font-size: 45px;
@@ -320,22 +358,27 @@ ul.se-sipkama li.bez-sipky {
     color: #192243;
     margin-bottom: 70px;
 }
+
 #homepage div.info-o-kurzu .content {
     font-family: "IBMPlexSans";
     font-size: 17px;
     color: #0a0f0d;
 }
+
 #homepage div.info-o-kurzu .content span {
     font-family: "IBMPlexSans-Bold";
     color: #ee4445;
 }
+
 #homepage div.info-o-kurzu .content a span {
     text-decoration: underline;
 }
+
 #homepage div.info-o-kurzu .content a:hover,
 #homepage div.info-o-kurzu .content a:hover span {
     text-decoration: none;
 }
+
 #homepage div.info-o-kurzu .content .misto {
     margin-left: 15px;
     margin-top: -5px;
@@ -345,28 +388,34 @@ ul.se-sipkama li.bez-sipky {
     height: 285px;
     background-color: #273043;
 }
+
 #homepage div.cena-kurzu .content {
     height: 285px;
     line-height: 285px;
     position: relative;
 }
+
 #homepage div.cena-kurzu .content .description {
     display: inline-block;
     color: #fff;
     font-family: "IBMPlexSans";
     font-size: 28px;
 }
+
 #homepage div.cena-kurzu .content .description .cena {
     font-family: "IBMPlexSans-Bold";
     font-size: 45px;
 }
+
 #homepage div.cena-kurzu .content span.btn-center {
     position: absolute;
     right: 0;
 }
+
 #homepage div.cena-kurzu .content a {
     position: relative;
 }
+
 #homepage div.cena-kurzu .content span.sipcicka {
     display: inline-block;
     width: 10px;
@@ -379,6 +428,7 @@ ul.se-sipkama li.bez-sipky {
     left: 125px;
     transition: background-color .25s;
 }
+
 #homepage div.cena-kurzu .content a:hover span.sipcicka {
     background-color: #ee4445;
 }
@@ -387,6 +437,7 @@ ul.se-sipkama li.bez-sipky {
     padding-top: 75px;
     padding-bottom: 110px;
 }
+
 #homepage div.terminy-kurzu .title {
     font-family: "IBMPlexSans-Bold";
     color: #141934;
@@ -398,20 +449,25 @@ ul.se-sipkama li.bez-sipky {
 #homepage div.terminy-kurzu .forms .form-wrap .text.text-right {
     position: relative;
 }
+
 #homepage div.terminy-kurzu .forms .form-wrap .text.text-right button,
 #homepage div.terminy-kurzu .forms .form-wrap .text.text-right a {
     position: absolute;
     right: 0;
 }
+
 #homepage div.terminy-kurzu .forms .form-wrap {
     background-color: #f7f3db;
 }
+
 #homepage div.terminy-kurzu .forms .form-wrap:nth-child(even) {
     background-color: #fbf8e6;
 }
+
 #homepage div.terminy-kurzu .forms .form-wrap .form-text {
     min-height: 80px;
 }
+
 #homepage div.terminy-kurzu .forms .form-wrap .form-text .col-1 {
     font-family: "IBMPlexSans-Bold";
     color: #273043;
@@ -419,6 +475,7 @@ ul.se-sipkama li.bez-sipky {
     line-height: 125%;
     margin-top: 20px;
 }
+
 #homepage div.terminy-kurzu .forms .form-wrap .form-text .col-2x {
     font-family: "IBMPlexSans-Light";
     color: #273043;
@@ -426,33 +483,39 @@ ul.se-sipkama li.bez-sipky {
     line-height: 125%;
     margin-top: 20px;
 }
+
 #homepage div.terminy-kurzu .forms .form-wrap .form-text .cena {
     font-family: "IBMPlexSans-Bold";
     color: #ee4445;
 }
+
 #homepage div.terminy-kurzu .forms .form-wrap .form-form {
     display: none;
 }
+
 #homepage div.terminy-kurzu .forms .form-wrap label.red {
     font-family: "IBMPlexSans-Bold";
     color: #ee4445;
     font-size: 17px;
 }
+
 #homepage div.terminy-kurzu .forms .form-wrap a.ochrana {
     color: #ee4445;
 }
+
 #homepage div.terminy-kurzu .forms .form-wrap a.close-form {
     font-family: "IBMPlexSans" !important;
-    font-size: 22px!important;
-    padding: 4px 12px!important;
-    height: 40px!important;
-    line-height: 22px!important;
+    font-size: 22px !important;
+    padding: 4px 12px !important;
+    height: 40px !important;
+    line-height: 22px !important;
     display: none;
 }
+
 #homepage div.terminy-kurzu .forms .form-wrap .input-text {
     font-family: "IBMPlexSans-Bold";
     font-size: 17px;
-    color: #273043!important;
+    color: #273043 !important;
     border-color: #e6e2cc;
     background-color: #f9f8f1;
     height: 45px;
@@ -471,15 +534,18 @@ ul.se-sipkama li.bez-sipky {
     line-height: 125%;
     margin-bottom: 55px;
 }
+
 .frontend div.sdileni .description {
     color: #0a0f0d;
     font-size: 17px;
     line-height: 125%;
     margin-bottom: 25px;
 }
+
 .frontend div.sdileni form input::placeholder {
     color: #cbc9bd;
 }
+
 .frontend div.sdileni form input {
     font-family: "IBMPlexSans-Light";
     color: #273043;
@@ -492,6 +558,7 @@ ul.se-sipkama li.bez-sipky {
     padding-right: 30px;
     border-radius: 3px;
 }
+
 .frontend div.sdileni .fb-share-button {
     margin-bottom: 15px;
 }
@@ -507,41 +574,52 @@ ul.se-sipkama li.bez-sipky {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @media screen and (max-width: 767px) {
     #top-content a.navbar-brand .title {
         font-size: 20px;
     }
+
     #homepage .infopruh .line-1 {
         font-size: 30px;
     }
+
     #homepage .infopruh .line-2 {
         font-size: 26px;
     }
-    #homepage div.prihlastese-omne .content span
-    {
+
+    #homepage div.prihlastese-omne .content span {
         position: static;
         margin-bottom: 25px;
         display: inline-block;
     }
+
     #homepage .content-first {
         margin-bottom: 25px;
     }
+
     #homepage div.terminy-kurzu .forms .form-wrap .text.text-right button, #homepage div.terminy-kurzu .forms .form-wrap .text.text-right a {
         position: static;
     }
 }
+
 @media screen and (max-width: 991px) {
     #homepage div.cena-kurzu .content {
         line-height: 100%;
     }
+
     #homepage div.cena-kurzu .content .description {
         line-height: 150%;
         margin-top: 25px;
     }
+
     #homepage div.cena-kurzu .content span.btn-center {
         position: static;
         line-height: 100%;
@@ -551,10 +629,10 @@ ul.se-sipkama li.bez-sipky {
 }
 
 body#page {
-    font-family: "IBMPlexSans"!important;
-    color: #0a0f0d!important;
-    font-size: 17px!important;
-    line-height: 125%!important;
+    font-family: "IBMPlexSans" !important;
+    color: #0a0f0d !important;
+    font-size: 17px !important;
+    line-height: 125% !important;
 }
 
 #page a {
@@ -585,14 +663,17 @@ body#page {
 #page h1 {
     font-size: 45px;
 }
+
 #page h2 {
     font-size: 28px;
 }
+
 #page .infopruh {
     height: 280px;
     background: #171F3E url('img/infopruhclanek.png') 50% 0 no-repeat;
     position: relative;
 }
+
 #page .content {
     padding-top: 25px;
 }
@@ -601,10 +682,12 @@ body#page {
     list-style-type: none;
     padding-left: 0;
 }
+
 #page .content ul li {
     padding-left: 30px;
     background: transparent url('img/li.png') 0 9px no-repeat;
 }
+
 #page .content pre {
     padding: 40px;
     line-heignt: 200%;
@@ -620,6 +703,7 @@ body#page {
     padding-bottom: 50px;
     background-color: #f9fafa;
 }
+
 .side-nav li a {
     color: #ee4445;
 }
@@ -638,6 +722,12 @@ body#page {
 #page .content ul.articles li div.box h2 {
     margin-top: 0;
 }
+
+#page .content ul.articles li div.box-img {
+    margin: 0px 15px 0px 15px;
+    float: left;
+}
+
 #page .infopruh h1.title {
     color: #ffffff;
     margin-top: 55px;
@@ -647,16 +737,35 @@ body#page {
     color: #ee4445;
     text-decoration: underline;
 }
+
 #page #main-content .content a:hover {
     text-decoration: none;
 }
+
 #page #main-content .content {
     text-align: justify;
 }
+
 #page #main-content .content .share {
     text-align: right;
     margin-top: 50px;
     margin-bottom: 30px;
+}
+
+#page #main-content .content .img-wrap {
+    overflow: hidden;
+    width: 170px;
+    height: 170px;
+}
+
+#page #main-content .content .img-wrap img {
+    width: 170px;
+    height: 170px;
+    transition: all .5s;
+}
+
+#page #main-content .content .img-wrap a:hover img {
+    transform: scale(1.2) rotate(-5deg);
 }
 
 #page #main-content .content ul,
@@ -664,6 +773,7 @@ body#page {
 #page #main-content .content p {
     margin-bottom: 25px;
 }
+
 #page #main-content .content p.empty-paragraph {
     margin-bottom: 0px;
 }
