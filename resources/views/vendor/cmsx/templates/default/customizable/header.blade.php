@@ -7,7 +7,7 @@
         $og_image = url('img/code.jpg');
     @endphp
 @endif
-<link href="/css/programovaniwebu.css?v=20180425002" rel="stylesheet">
+<link href="/css/programovaniwebu.css?v=201807051643" rel="stylesheet">
 <link href="/fonts/ibm-plex/stylesheet.css" rel="stylesheet">
 <meta property="og:url"           content="{{ url()->current() }}" />
 <meta property="og:type"          content="website" />
