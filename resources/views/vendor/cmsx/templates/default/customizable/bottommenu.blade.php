@@ -21,7 +21,8 @@
                 <div class="title">Sdílejte stránku<br>s přáteli,&nbsp;&nbsp;díky!</div>
                 <div class="fb-share-button" data-href="{{ url()->current() }}" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(url()->current()) }}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Sdílet</a></div>
                 <div class="clearfix"></div>
-                <div class="fb-group" data-href="https://www.facebook.com/groups/programovaniwebu/" data-width="280" data-show-social-context="true" data-show-metadata="true"></div>
+                {{--<div class="fb-group" data-href="https://www.facebook.com/groups/programovaniwebu/" data-width="280" data-show-social-context="true" data-show-metadata="true"></div>--}}
+                <div class="fb-page" data-href="https://www.facebook.com/programovaniwebucz/" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/programovaniwebucz/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/programovaniwebucz/">Programování webu</a></blockquote></div>
             </div>
         </div>
     </div>
