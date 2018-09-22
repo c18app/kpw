@@ -777,3 +777,15 @@ body#page {
 #page #main-content .content p.empty-paragraph {
     margin-bottom: 0px;
 }
+
+#page.blank .infopruh {
+    height: auto;
+    background: #171F3E url('img/infopruhclanek.png') 50% 0 no-repeat;
+    position: relative;
+}
+
+#page.blank .infopruh h1.title {
+    color: #ffffff;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}

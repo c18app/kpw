@@ -19,3 +19,4 @@ Route::post('/affiliate', 'AffiliateController@register')->name('affiliate.regis
 Route::get('/affiliate/account', 'AffiliateController@account')->name('affiliate.account');
 Route::get('/dashboard', 'IndexController@dashboard')->name('index.dashboard');
 Route::get('/kurzy', 'IndexController@kurzy')->name('index.kurzy');
+Route::view('/kurzy/dokumenty/ke/kurzu', 'dokumenty-ke-kurzu');

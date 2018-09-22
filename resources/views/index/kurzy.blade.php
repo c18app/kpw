@@ -44,7 +44,7 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
                     <div class="title">Přihlaste se na kurz</div>
-                    <div class="subtitle">a naučte se základy,<br>zvládneme to za 8 hodin</div>
+                    <div class="subtitle">za 8 hodin se naučíme základy<br><strong style="color: #ee4445;">a naprogramujeme si jednoduchou stránku s administrací</strong></div>
                     <ul class="se-sipkama">
                         <li>Kurz se zaměřuje na čisté základy a po absolvování budete mít dobrý základ k tomu naučit se
                             programovat weby.
@@ -52,12 +52,13 @@ $terms = App\WorkshopTerm::where('finish', '>', \Carbon\Carbon::now())->get();
                         <li>Naučíte se, jak se používají HTML značky, dozvíte se, k čemu je CSS a k čemu se používá
                             JavaScript.
                         </li>
-                        <li>Programování logiky webu bude probíhat v PHP, povíme si i o frameworku Laravel.</li>
+                        <li>Programování logiky webu bude probíhat v PHP.</li>
                         <li>Popíšeme si, k čemu a jak se používají databáze v tomto konkrétním případě MySQL.</li>
-                        <li>Dozvíte se další informace o věcech jako GIT a composer.</li>
+                        <li>Dozvíte se jak spravovat verze pomocí GITu.</li>
                         <li>Ukážeme si nástroje, které nám usnadní práci při vývoji a řekneme si, co potřebujete k
                             vytvoření webu.
                         </li>
+                        <li>Řekneme si o dalších pojmech jako je composer, nebo frameworky.</li>
                     </ul>
                 </div>
                 <div class="col-xs-12 col-sm-5 col-sm-offset-1">
