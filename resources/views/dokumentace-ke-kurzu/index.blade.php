@@ -7,8 +7,7 @@
 @section('content')
     <h2>Dokumentace</h2>
     <ul>
-        <li><a href="{{ route('dokumentace.html') }}">HTML</a></li>
-        <li><a href="{{ route('dokumentace.css') }}">CSS</a></li>
+        @include('dokumentace-ke-kurzu.@menu')
     </ul>
 @endsection
 

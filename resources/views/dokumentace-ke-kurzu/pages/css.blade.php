@@ -1,8 +1,8 @@
 @extends(Config('cmsx.app.template').'::layouts.main', ['content_type'=>'dokumentace'])
 
-@section('title', ' - dokumentace ke kurzu')
+@section('title', ' - CSS | dokumentace ke kurzu')
 
-@section('content-title', 'dokumentace ke kurzu')
+@section('content-title', 'CSS')
 
 @section('content')
 <h2>CSS</h2>

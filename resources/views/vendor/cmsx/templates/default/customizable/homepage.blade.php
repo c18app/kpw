@@ -4,8 +4,10 @@
     $clanky = C18app\Cmsx\Models\Article::limit(10)->orderBy('id', 'desc')->get();
 @endphp
 
+@section('content-title-hp', 'Články o programování')
+
 @section('content')
-    <h1>Články</h1>
+    <h2>Články</h2>
 
     <ul class="articles">
         @foreach($clanky as $clanek)
