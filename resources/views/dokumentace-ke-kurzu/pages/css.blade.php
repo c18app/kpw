@@ -13,28 +13,31 @@
 </p>
 <h3>příklady použití</h3>
 <p style="margin-bottom: 0;">
-    vloženo v HTML
+    vloženo do HTML dokumentu
 </p>
 <pre>
-&lg;tyle type="text/css"&gt;
+&lt;tyle type="text/css"&gt;
 #element {
     width: 200px;
     color: #f00;
 }
-&lg;/style&gt;
+&lt;/style&gt;
 </pre>
 <p style="margin-bottom: 0;">
-    příklad párové značky:
+    jako link odkazující na CSS dokument
 </p>
 <pre>
-&lt;p&gt;Text odstavce&lt;/p&gt;
+&lt;head&gt;
+  &lt;link rel='stylesheet' href='styl.css' type='text/css'&gt;
+&lt;/head&gt;
 </pre>
 <p style="margin-bottom: 0;">
-    příklad komentáře:
+    jako inline styl v elementu
 </p>
 <pre>
-&lt;!-- toto je komentář --&gt;
+&lt;p style="color: #f00; font-weight: bold;"&gt;Tento odstavec se zobrazí červený a tučný.&lt;/p&gt;
 </pre>
+
 
 <h3>Základní struktura HTML5 dokumentu</h3>
 <pre>
