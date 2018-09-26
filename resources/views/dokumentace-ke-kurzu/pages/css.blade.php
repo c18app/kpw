@@ -1,21 +1,27 @@
-<h2>HTML</h2>
+@extends(Config('cmsx.app.template').'::layouts.main', ['content_type'=>'dokumentace'])
 
-<h3>Co je to HTML</h3>
+@section('title', ' - dokumentace ke kurzu')
+
+@section('content-title', 'dokumentace ke kurzu')
+
+@section('content')
+<h2>CSS</h2>
+
+<h3>Co je to CSS</h3>
 <p>
-    Jazyk HTML (HyperText Markup Language) je hypertextový značkovací jazyk. Jedná se o značkovací jazyk, jehož pomocí
-    je možné vytvořit webovou stránku.
+    CSS (Cascading Style Sheets) je jazyk, který popisuje způsob zobrazení elementů na stránkách.
 </p>
-<p>
-    Jazyk obsahuje skupinu značek (tagů), které můžou dále obsahovat vlastnosti (atributy). Mezi značky se uzavírají
-    části textu dokumentu a tím se určuje význam obsaženého textu. Značky se uzavírají do "ostrých závorek" &lt; a &gt;
-    Tagy můžou být párové nebo nepárové. Párový tag je ukončen značkou, která je stejná jako tag otevírací, akorát má
-    před názvem tagu lomítko.
-</p>
+<h3>příklady použití</h3>
 <p style="margin-bottom: 0;">
-    příklad nepárové značky:
+    vloženo v HTML
 </p>
 <pre>
-&lt;img src="/cesta/k/obrazku"&gt;
+&lg;tyle type="text/css"&gt;
+#element {
+    width: 200px;
+    color: #f00;
+}
+&lg;/style&gt;
 </pre>
 <p style="margin-bottom: 0;">
     příklad párové značky:
@@ -84,3 +90,4 @@
 
 </table>
 </p>
+@endsection
