@@ -5,6 +5,10 @@
 
 @section('content')
     <style>
+        a.odkaz-po-najeti-zmeni-barvu {
+            color: #ee4445;
+        }
+
         a.odkaz-po-najeti-zmeni-barvu:hover {
             color: #192243 !important;
         }
@@ -278,6 +282,10 @@
     <div style="clear: both;"></div>
     <pre>{{
     htmlentities('<style>
+a.odkaz-po-najeti-zmeni-barvu {
+  color: #ee4445;
+}
+
 a.odkaz-po-najeti-zmeni-barvu:hover {
   color: #192243;
 }
