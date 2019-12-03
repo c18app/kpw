@@ -25,6 +25,47 @@
             /* box-shadow: <barva> <vodorovný posun> <svislý posun> <rozostření> <rozprostření> */
         }
 
+        .podtrzeni-odkazu {
+            margin-top: 50px;
+            width: 50%;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .podtrzeni-odkazu span {
+            font-size: 36px;
+            transition: all 0.2s ease-in-out;
+            position: relative;
+        }
+
+        .podtrzeni-odkazu span:before,
+        .podtrzeni-odkazu span:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            width: 0px;
+            height: 5px;
+            margin: 5px 0 0;
+            transition: all 0.2s ease-in-out;
+            transition-duration: 0.75s;
+            opacity: 0;
+            background-color: #ee4445;
+        }
+
+        .podtrzeni-odkazu span:before {
+            left: 50%;
+        }
+
+        .podtrzeni-odkazu span:after {
+            right: 50%;
+        }
+
+        .podtrzeni-odkazu:hover span:before,
+        .podtrzeni-odkazu:hover span:after {
+            opacity: 1;
+            width: 50%;
+        }
+
         .zakladni-box {
             margin-top: 50px;
             width: 50%;
@@ -140,12 +181,26 @@
         }
 
         .animovany-prvek-2 {
+            display: inline-block;
             width: 100px;
             height: 100px;
-            border: 10px solid #ee4445;
-            border-radius: 50px;
-            border-left: none;
-            border-top: none;
+            border-radius: 50%;
+            border: 20px solid transparent;
+            border-color: #ee4445 #192243 #ee4445 #192243;
+            animation: animace-2 2s linear infinite;
+            position: relative;
+            left: 0;
+        }
+
+        @keyframes animace-2 {
+            0% {
+                transform: rotate(0deg);
+                left: 0;
+            }
+            50% {
+                left: calc(50% - 100px);
+                transform: rotate(360deg);
+            }
         }
     </style>
 
@@ -176,6 +231,10 @@
     </style>
     <p class="font-pacifico" style="margin-top: 50px;">Text s google fontem "Pacifico" <a
                 href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a></p>
+
+    <div class="podtrzeni-odkazu">
+        <span>podtržení odkazu</span>
+    </div>
 
     <p class="zakladni-box plynula-zmena-barvy">
         prvek s plynulou změnou barvy
