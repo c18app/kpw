@@ -16,9 +16,10 @@
 
     <h1>Příklad #2</h1>
 
-    <h2>HTML - Hypertext Markup Language</h2>
+    <h2>Ukázka pokročilých stylů</h2>
 
 
-
+    <div style="clear: both;"></div>
+    <a href="/kurz/davinci/e3b777/01/01" style="float: right;">zpět</a>
 @endsection
 

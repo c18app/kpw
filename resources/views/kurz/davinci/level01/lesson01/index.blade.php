@@ -73,7 +73,7 @@
 }}</pre>
 
     <p>
-        <strong>HTML online editor</strong>: <a href="https://glitch.com/">https://glitch.com/</a>
+        <strong>HTML online editor</strong>: <a href="https://glitch.com/" target="_blank">https://glitch.com/</a>
     </p>
     <p>
         <strong>doporučená literatura</strong>: HTML5 okamžitě (computer press)
