@@ -93,6 +93,8 @@
 
     <div style="clear: both;"></div>
     <a href="/kurz/davinci/e3b777/01/01" style="float: right;">zpět</a>
+    <br>
+    <br>
 
     <div style="clear: both;"></div>
     <pre>{{
@@ -183,6 +185,8 @@
 ')
 
 }}</pre>
+
+    <a href="/kurz/davinci/e3b777/01/01" style="float: right;">zpět</a>
 
 @endsection
 
