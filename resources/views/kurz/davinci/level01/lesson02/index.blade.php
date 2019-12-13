@@ -114,10 +114,10 @@
     <div>
         <a href="#" id="btn-nova-hra">nová hra</a>
         <ul id="piskvorky">
-            <li id="policko-1-1" class="policko kolecko"></li>
-            <li id="policko-1-2" class="policko krizek"></li>
-            <li id="policko-1-3" class="policko prazdne kolecko"></li>
-            <li id="policko-2-1" class="policko prazdne krizek"></li>
+            <li id="policko-1-1" class="policko prazdne"></li>
+            <li id="policko-1-2" class="policko prazdne"></li>
+            <li id="policko-1-3" class="policko prazdne"></li>
+            <li id="policko-2-1" class="policko prazdne"></li>
             <li id="policko-2-2" class="policko prazdne"></li>
             <li id="policko-2-3" class="policko prazdne"></li>
             <li id="policko-3-1" class="policko prazdne"></li>
@@ -131,9 +131,122 @@
     <script>
         var btnNovaHra = document.getElementById("btn-nova-hra");
         var policka = document.getElementsByClassName("policko");
-        btnNovaHra.addEventListener('click', function () {
-            console.log(policka);
+        var aktualniSymbol = "kolecko";
+
+        btnNovaHra.addEventListener('click', function (ev) {
+            for (var i = 0; i < policka.length; i++) {
+                policka[i].classList.remove('kolecko');
+                policka[i].classList.remove('krizek');
+                policka[i].classList.add('prazdne');
+            }
+
+            aktualniSymbol = "kolecko";
+            ev.preventDefault()
         });
+
+        for (var i = 0; i < policka.length; i++) {
+            policka[i].addEventListener('mouseover', function (ev) {
+                if (ev.target.classList.contains('prazdne')) {
+                    ev.target.classList.add(aktualniSymbol);
+                }
+            });
+
+            policka[i].addEventListener('mouseout', function (ev) {
+                if (ev.target.classList.contains('prazdne')) {
+                    ev.target.classList.remove('kolecko');
+                    ev.target.classList.remove('krizek');
+                }
+            });
+
+            policka[i].addEventListener('click', function (ev) {
+                if (ev.target.classList.contains('prazdne')) {
+                    ev.target.classList.add(aktualniSymbol);
+                    ev.target.classList.remove('prazdne');
+
+                    if (aktualniSymbol == 'kolecko') {
+                        aktualniSymbol = 'krizek'
+                    } else {
+                        aktualniSymbol = 'kolecko'
+                    }
+
+                    vyhodnotVyhru();
+                }
+            });
+        }
+
+        function vyhodnotVyhru() {
+            var vyplneno = 0;
+            var vyhodnoceni_radek = 0;
+            var vyhodnoceni_sloupec_kolecka = 0;
+            var vyhodnoceni_sloupec_krizky = 0;
+            var vyhodnoceni_uhlopricka = 0;
+            for (var y = 0; y < 3; y++) {
+                vyhodnoceni_radek = 0;
+                for (var x = 0; x < 3; x++) {
+                    var i = x + (y * 3)
+                    if (policka[i].classList.contains('prazdne')) {
+                        // nekontroluj prazdne pole
+                    } else {
+                        if (policka[i].classList.contains('kolecko')) {
+                            vyhodnoceni_radek++;
+                            vyhodnoceni_sloupec_kolecka += Math.pow(2, i);
+                            if (x == y) {
+                                vyhodnoceni_uhlopricka += 1
+                            }
+                            if (x == 2 - y) {
+                                vyhodnoceni_uhlopricka += 10
+                            }
+                        } else if (policka[i].classList.contains('krizek')) {
+                            vyhodnoceni_radek--;
+                            vyhodnoceni_sloupec_krizky += Math.pow(2, i);
+                            if (x == y) {
+                                vyhodnoceni_uhlopricka -= 1
+                            }
+                            if (x == 2 - y) {
+                                vyhodnoceni_uhlopricka -= 10
+                            }
+                        }
+
+                        vyplneno++;
+                    }
+
+                    if (vyhodnoceni_radek == 3) {
+                        alert('vyhrála kolečka!');
+                        return;
+                    } else if (vyhodnoceni_radek == -3) {
+                        alert('vyhrály křížky!');
+                        return;
+                    }
+
+                    if ((vyhodnoceni_sloupec_kolecka & 73) == 73
+                        || (vyhodnoceni_sloupec_kolecka & 146) == 146
+                        || (vyhodnoceni_sloupec_kolecka & 292) == 292
+                    ) {
+                        alert('vyhrála kolečka!');
+                        return;
+                    } else if ((vyhodnoceni_sloupec_krizky & 73) == 73
+                        || (vyhodnoceni_sloupec_krizky & 146) == 146
+                        || (vyhodnoceni_sloupec_krizky & 292) == 292
+
+                    ) {
+                        alert('vyhrály křížky!');
+                        return;
+                    }
+
+                    // if (vyhodnoceni_uhlopricka & 3 == 3 || vyhodnoceni_uhlopricka & 30 == 30) {
+                    //     alert('vyhrála kolečka!');
+                    //     return;
+                    // } else if (vyhodnoceni_uhlopricka & -3 == -3 || vyhodnoceni_uhlopricka & -30 == -30) {
+                    //     alert('vyhrály křížky!');
+                    //     return;
+                    // }
+
+                    if (vyplneno == 9) {
+                        alert('remiza!');
+                    }
+                }
+            }
+        }
     </script>
 @endsection
 
