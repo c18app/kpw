@@ -132,6 +132,7 @@
         var btnNovaHra = document.getElementById("btn-nova-hra");
         var policka = document.getElementsByClassName("policko");
         var aktualniSymbol = "kolecko";
+        var konecHry = false;
 
         btnNovaHra.addEventListener('click', function (ev) {
             for (var i = 0; i < policka.length; i++) {
@@ -141,11 +142,16 @@
             }
 
             aktualniSymbol = "kolecko";
+            konecHry = false;
             ev.preventDefault()
         });
 
         for (var i = 0; i < policka.length; i++) {
             policka[i].addEventListener('mouseover', function (ev) {
+                if (konecHry) {
+                    return;
+                }
+
                 if (ev.target.classList.contains('prazdne')) {
                     ev.target.classList.add(aktualniSymbol);
                 }
@@ -159,6 +165,10 @@
             });
 
             policka[i].addEventListener('click', function (ev) {
+                if (konecHry) {
+                    return;
+                }
+
                 if (ev.target.classList.contains('prazdne')) {
                     ev.target.classList.add(aktualniSymbol);
                     ev.target.classList.remove('prazdne');
@@ -176,70 +186,52 @@
 
         function vyhodnotVyhru() {
             var vyplneno = 0;
-            var vyhodnoceni_radek = 0;
-            var vyhodnoceni_sloupec_kolecka = 0;
-            var vyhodnoceni_sloupec_krizky = 0;
-            var vyhodnoceni_uhlopricka = 0;
+            var vyhodnoceni_kolecka = 0;
+            var vyhodnoceni_krizky = 0;
             for (var y = 0; y < 3; y++) {
-                vyhodnoceni_radek = 0;
                 for (var x = 0; x < 3; x++) {
                     var i = x + (y * 3)
                     if (policka[i].classList.contains('prazdne')) {
                         // nekontroluj prazdne pole
                     } else {
                         if (policka[i].classList.contains('kolecko')) {
-                            vyhodnoceni_radek++;
-                            vyhodnoceni_sloupec_kolecka += Math.pow(2, i);
-                            if (x == y) {
-                                vyhodnoceni_uhlopricka += 1
-                            }
-                            if (x == 2 - y) {
-                                vyhodnoceni_uhlopricka += 10
-                            }
+                            vyhodnoceni_kolecka += Math.pow(2, i);
                         } else if (policka[i].classList.contains('krizek')) {
-                            vyhodnoceni_radek--;
-                            vyhodnoceni_sloupec_krizky += Math.pow(2, i);
-                            if (x == y) {
-                                vyhodnoceni_uhlopricka -= 1
-                            }
-                            if (x == 2 - y) {
-                                vyhodnoceni_uhlopricka -= 10
-                            }
+                            vyhodnoceni_krizky += Math.pow(2, i);
                         }
 
                         vyplneno++;
                     }
 
-                    if (vyhodnoceni_radek == 3) {
+                    if (
+                        (vyhodnoceni_kolecka & 7) == 7
+                        || (vyhodnoceni_kolecka & 56) == 56
+                        || (vyhodnoceni_kolecka & 448) == 448
+                        || (vyhodnoceni_kolecka & 73) == 73
+                        || (vyhodnoceni_kolecka & 146) == 146
+                        || (vyhodnoceni_kolecka & 292) == 292
+                        || (vyhodnoceni_kolecka & 273) == 273
+                        || (vyhodnoceni_kolecka & 84) == 84
+                    ) {
+                        konecHry = true;
                         alert('vyhrála kolečka!');
                         return;
-                    } else if (vyhodnoceni_radek == -3) {
+                    } else if (
+                        (vyhodnoceni_krizky & 7) == 7
+                        || (vyhodnoceni_krizky & 56) == 56
+                        || (vyhodnoceni_krizky & 448) == 448
+                        || (vyhodnoceni_krizky & 73) == 73
+                        || (vyhodnoceni_krizky & 146) == 146
+                        || (vyhodnoceni_krizky & 292) == 292
+                        || (vyhodnoceni_krizky & 273) == 273
+                        || (vyhodnoceni_krizky & 84) == 84
+
+                    ) {
+                        konecHry = true;
                         alert('vyhrály křížky!');
                         return;
                     }
 
-                    if ((vyhodnoceni_sloupec_kolecka & 73) == 73
-                        || (vyhodnoceni_sloupec_kolecka & 146) == 146
-                        || (vyhodnoceni_sloupec_kolecka & 292) == 292
-                    ) {
-                        alert('vyhrála kolečka!');
-                        return;
-                    } else if ((vyhodnoceni_sloupec_krizky & 73) == 73
-                        || (vyhodnoceni_sloupec_krizky & 146) == 146
-                        || (vyhodnoceni_sloupec_krizky & 292) == 292
-
-                    ) {
-                        alert('vyhrály křížky!');
-                        return;
-                    }
-
-                    // if (vyhodnoceni_uhlopricka & 3 == 3 || vyhodnoceni_uhlopricka & 30 == 30) {
-                    //     alert('vyhrála kolečka!');
-                    //     return;
-                    // } else if (vyhodnoceni_uhlopricka & -3 == -3 || vyhodnoceni_uhlopricka & -30 == -30) {
-                    //     alert('vyhrály křížky!');
-                    //     return;
-                    // }
 
                     if (vyplneno == 9) {
                         alert('remiza!');
