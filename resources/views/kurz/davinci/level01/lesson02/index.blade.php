@@ -11,7 +11,7 @@
             color: #333;
         }
 
-        #piskvorky, #piskvorky * {
+        #piskvorky, #piskvorky *, #piskvorky *:after, #piskvorky *:before {
             box-sizing: content-box;
             font-size: 0;
         }
@@ -67,7 +67,11 @@
             border-bottom: none;
         }
 
-        #piskvorky .kolecko {
+        #piskvorky .kolecko:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
             margin-top: calc(20% - 10px);
             margin-left: calc(20% - 10px);
             width: 60%;
@@ -92,29 +96,44 @@
         #piskvorky .krizek:before {
             transform: rotate(45deg);
         }
+
         #piskvorky .krizek:after {
             transform: rotate(-45deg);
         }
 
+        #piskvorky .prazdne.krizek:before,
+        #piskvorky .prazdne.krizek:after,
+        #piskvorky .prazdne.kolecko:after {
+            border-color: #999;
+        }
+
     </style>
-
-
-
 
     <hr>
 
-    <ul id="piskvorky">
-        <li id="policko-1-1" class="policko"><div class="kolecko"></div></li>
-        <li id="policko-1-2" class="policko"><div class="krizek"></div></li>
-        <li id="policko-1-3" class="policko"></li>
-        <li id="policko-2-1" class="policko"></li>
-        <li id="policko-2-2" class="policko"></li>
-        <li id="policko-2-3" class="policko"></li>
-        <li id="policko-3-1" class="policko"></li>
-        <li id="policko-3-2" class="policko"></li>
-        <li id="policko-3-3" class="policko"></li>
-    </ul>
+    <div>
+        <a href="#" id="btn-nova-hra">nová hra</a>
+        <ul id="piskvorky">
+            <li id="policko-1-1" class="policko kolecko"></li>
+            <li id="policko-1-2" class="policko krizek"></li>
+            <li id="policko-1-3" class="policko prazdne kolecko"></li>
+            <li id="policko-2-1" class="policko prazdne krizek"></li>
+            <li id="policko-2-2" class="policko prazdne"></li>
+            <li id="policko-2-3" class="policko prazdne"></li>
+            <li id="policko-3-1" class="policko prazdne"></li>
+            <li id="policko-3-2" class="policko prazdne"></li>
+            <li id="policko-3-3" class="policko prazdne"></li>
+        </ul>
+    </div>
 
     <div class="clearfix"></div>
+
+    <script>
+        var btnNovaHra = document.getElementById("btn-nova-hra");
+        var policka = document.getElementsByClassName("policko");
+        btnNovaHra.addEventListener('click', function () {
+            console.log(policka);
+        });
+    </script>
 @endsection
 
